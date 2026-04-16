@@ -3,8 +3,9 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 
 ## Solved Problems 
 
-- Problem 1: Two Sum (15/04/26) ✅
-- Problem 217: Contains Duplicate (15/04/26) ✅
+- Problem 1: Two Sum (15/04/26) ✅ Hashmaps
+- Problem 217: Contains Duplicate (15/04/26) ✅ Sets
+- Problem 242: Valid Anagram (16/04/26) ✅ Hashmaps
 
 ## My Notes 
 
