@@ -20,7 +20,7 @@ class Solution:
                 anagrams[signature] = []
             anagrams[signature].append(word)
 
-        # Returns all values in the dict instead of another loop
+        # Returns all values in the dict as an array instead of another loop
         return list(anagrams.values())
 
 
