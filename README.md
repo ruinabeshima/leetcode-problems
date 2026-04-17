@@ -25,6 +25,7 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 #### Easy
 - Problem 283: Move Zeroes (17/04/26) ✅
 - Problem 977: Squares of a Sorted Array (17/04/26) ✅
+- Problem 844: Backspace String Compare (17/04/26) ✅
 
 #### Medium 
 - Problem 11: Container With Most Water (17/04/26) ✅
