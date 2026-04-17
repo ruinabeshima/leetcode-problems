@@ -29,7 +29,8 @@ class Solution:
     The values in the array must fall between 1 and n, so they can be mapped to a valid index. 
     Use the sign (positive / negative) of each element as a boolean flag to record whether you've seen the number in the array, without needing extra space 
     Actual values are still recoverable with abs() - returns the ABSOLUTE number
-    O(1) time 
+    
+    THIS METHOD IS STILL O(N) TIME, BUT IT IS O(1) SPACE  
     """
 
     def attempt3(self, nums: List[int]) -> List[int]:  # type: ignore
