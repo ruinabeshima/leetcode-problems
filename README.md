@@ -19,6 +19,12 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 - Problem 238: Product of array except itself (17/04/26) ✅
 - Problem 442: Find all duplicates in an array (17/04/26) ✅
 
+
+### Two Pointers 
+
+#### Easy 
+- Problem 283: Move Zeroes (17/04/26) ✅
+
 ## My Notes 
 
 ### Dictionaries / Hashmaps in Python
