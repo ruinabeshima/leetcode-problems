@@ -10,6 +10,7 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 - Problem 1: Two Sum (15/04/26) ✅ 
 - Problem 49: Group Anagrams (16/04/26) ✅
 - Problem 217: Contains Duplicate (15/04/26) ✅ 
+- Problem 238: Product of array except itself (17/04/26) ✅
 - Problem 242: Valid Anagram (16/04/26) ✅ 
 - Problem 268: Missing Number (17/04/26) ✅
 - Problem 347: Top k Frequent Elements (16/04/26) ✅
