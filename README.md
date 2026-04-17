@@ -3,11 +3,16 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 
 ## Solved Problems 
 
-- Problem 1: Two Sum (15/04/26) ✅ Hashmaps
-- Problem 217: Contains Duplicate (15/04/26) ✅ Sets
-- Problem 242: Valid Anagram (16/04/26) ✅ Hashmaps
-- Problem 49: Group Anagrams (16/04/26) ✅ Hashmaps
-- Problem 347: Top k Frequent Elements (16/04/26) ✅ Hashmaps
+
+### Arrays and Hash Tables 
+
+#### Easy 
+- Problem 1: Two Sum (15/04/26) ✅ 
+- Problem 49: Group Anagrams (16/04/26) ✅
+- Problem 217: Contains Duplicate (15/04/26) ✅ 
+- Problem 242: Valid Anagram (16/04/26) ✅ 
+- Problem 347: Top k Frequent Elements (16/04/26) ✅
+- Problem 449: Find all numbers disappeared in an array (17/04/26) ✅
 
 ## My Notes 
 
