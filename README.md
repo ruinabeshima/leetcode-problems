@@ -35,3 +35,7 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 
 ### In-place method 
 - Usable only for values in range [1, n]
+
+### Useful alogorithms 
+- In-place method 
+- Boyer-Moore Voting Algorithm 
