@@ -22,8 +22,11 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 
 ### Two Pointers 
 
-#### Easy 
+#### Easy
 - Problem 283: Move Zeroes (17/04/26) ✅
+
+#### Medium 
+- Problem 11: Container With Most Water (17/04/26) ✅
 
 ## My Notes 
 
