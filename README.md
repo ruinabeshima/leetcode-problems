@@ -1,35 +1,6 @@
 # leetcode-problems
 Leetcode questions for interview preparation. Questions taken from Neetcode 150. 
 
-## Solved Problems 
-
-
-### Arrays and Hash Tables 
-
-#### Easy 
-- Problem 1: Two Sum (15/04/26) ✅ 
-- Problem 49: Group Anagrams (16/04/26) ✅
-- Problem 217: Contains Duplicate (15/04/26) ✅ 
-- Problem 242: Valid Anagram (16/04/26) ✅ 
-- Problem 268: Missing Number (17/04/26) ✅
-- Problem 347: Top k Frequent Elements (16/04/26) ✅
-- Problem 449: Find all numbers disappeared in an array (17/04/26) ✅
-
-#### Medium 
-- Problem 238: Product of array except itself (17/04/26) ✅
-- Problem 442: Find all duplicates in an array (17/04/26) ✅
-
-
-### Two Pointers 
-
-#### Easy
-- Problem 283: Move Zeroes (17/04/26) ✅
-- Problem 977: Squares of a Sorted Array (17/04/26) ✅
-- Problem 844: Backspace String Compare (17/04/26) ✅
-
-#### Medium 
-- Problem 11: Container With Most Water (17/04/26) ✅
-
 ## My Notes 
 
 ### Dictionaries / Hashmaps in Python
@@ -51,6 +22,7 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 ### In-place method 
 - Usable only for values in range [1, n]
 
-### Useful alogorithms 
-- In-place method 
+### Useful algorithms 
+- In-place method
+- Sum of all numbers from 0 to n: n * (n + 1) / 2
 - Boyer-Moore Voting Algorithm 
