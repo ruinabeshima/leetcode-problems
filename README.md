@@ -1,7 +1,12 @@
 # leetcode-problems
-Leetcode questions for interview preparation. Questions taken from Neetcode 150. 
+Leetcode questions for interview preparation
 
 ## My Notes 
+
+### Useful algorithms 
+- In-place method (448 Find all numbers disappeared in an array) 
+- Sum of all numbers from 0 to n: n * (n + 1) / 2 (268 Missing Number) 
+- Boyer-Moore Voting Algorithm (169 Majority Element) 
 
 ### Dictionaries / Hashmaps in Python
 - ex. {1: "hello", 2: "world"}, 1 is the key and "hello" is the value
@@ -21,8 +26,3 @@ Leetcode questions for interview preparation. Questions taken from Neetcode 150.
 
 ### In-place method 
 - Usable only for values in range [1, n]
-
-### Useful algorithms 
-- In-place method
-- Sum of all numbers from 0 to n: n * (n + 1) / 2
-- Boyer-Moore Voting Algorithm 
