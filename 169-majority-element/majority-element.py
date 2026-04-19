@@ -1,15 +1,16 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        dict = {} 
+        count = 0 
+        candidate = None 
 
         for num in nums: 
-            dict[num] = dict.get(num, 0) + 1
+            if count == 0: 
+                candidate = num 
 
-        count = 0 
-        max_key = 0 
-        for key in dict: 
-            if dict[key] > count: 
-                count = dict[key]
-                max_key = key
+            if num == candidate: 
+                count += 1 
+            else: 
+                count -= 1 
 
-        return max_key
+        
+        return candidate
