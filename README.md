@@ -1,6 +1,20 @@
 # leetcode-problems
 Leetcode questions for interview preparation
 
+## Topics 
+
+### Arrays, Hashmaps 
+- 1
+- 121
+- 169 (Boyer-Moore Voting Algorithm)
+- 217
+- 242
+- 268 (Sum Subtraction)
+- 383
+- 387
+- 389 (Sum Subtraction) 
+- 448 (In-place method) 
+
 ## My Notes 
 
 ### Useful algorithms 
