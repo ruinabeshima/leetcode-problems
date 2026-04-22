@@ -1,16 +1,12 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         intersection = []
-        nums_set = set()
+        nums_1_set = set(nums1)
+        nums_2_set = set(nums2)
 
-        for num1 in nums1: 
-            for num2 in nums2: 
-                if num1 == num2: 
-                    if num1 not in nums_set: 
-                        nums_set.add(num1)
-
-        for key in nums_set: 
-            intersection.append(key)
+        for num in nums_2_set: 
+            if num in nums_1_set: 
+                intersection.append(num)
         
         return intersection 
 
