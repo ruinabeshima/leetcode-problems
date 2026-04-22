@@ -13,14 +13,16 @@ Leetcode questions for interview preparation
 - 383
 - 387
 - 389 (Sum Subtraction) 
-- 448 (In-place method) 
+- 448 (In-place method)
+- 202 (Floyd's Cycle Detection) 
 
 ## My Notes 
 
 ### Useful algorithms 
 - In-place method (448 Find all numbers disappeared in an array) 
 - Sum of all numbers from 0 to n: n * (n + 1) / 2 (268 Missing Number) 
-- Boyer-Moore Voting Algorithm (169 Majority Element) 
+- Boyer-Moore Voting Algorithm (169 Majority Element)
+- Floyd's Cycle Detection (202 Happy Number) 
 
 ### Dictionaries / Hashmaps in Python
 - ex. {1: "hello", 2: "world"}, 1 is the key and "hello" is the value
