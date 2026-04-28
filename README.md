@@ -18,6 +18,9 @@ Leetcode questions for interview preparation
 - 349
 - 350
 
+### Two Pointers 
+- 125 Valid Palidrome
+
 ## My Notes 
 
 ### Useful algorithms 
