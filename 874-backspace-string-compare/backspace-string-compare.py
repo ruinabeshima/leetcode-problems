@@ -1,31 +1,38 @@
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
-        arr1 = []
-        arr2 = [] 
+        i = len(s) -1 
+        j = len(t) -1
+        s_skip = 0 
+        t_skip = 0
 
-        for char in s: 
-            if char == "#" and len(arr1) > 0: 
-                arr1.pop()
-            elif char == "#" and len(arr1) == 0: 
-                continue
-            else: 
-                arr1.append(char)
+        while i >= 0 or j >= 0: 
+            while i >= 0: 
+                if s[i] == "#":
+                    s_skip += 1 
+                    i -= 1 
+                elif s_skip > 0:
+                    s_skip -= 1  
+                    i -= 1 
+                else: 
+                    break
+        
+            while j >= 0: 
+                if t[j] == "#":
+                    t_skip += 1 
+                    j -= 1 
+                elif t_skip > 0:
+                    t_skip -= 1  
+                    j -= 1 
+                else: 
+                    break
 
-        for char in t: 
-            if char == "#" and len(arr2) > 0: 
-                arr2.pop()
-            elif char == "#" and len(arr2) == 0: 
-                continue
-            else: 
-                arr2.append(char)
+            if i >= 0 and j >= 0:
+                if s[i] != t[j]:
+                    return False
+            elif i >= 0 or j >= 0:
+                return False
 
-        if len(arr1) != len(arr2): 
-            return False
+            i -= 1
+            j -= 1
 
-        for i in range(len(arr1)):
-            if (arr1[i] != arr2[i]):
-                return False 
-
-        return True
-    
-            
+        return True                
