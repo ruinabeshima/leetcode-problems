@@ -21,6 +21,7 @@ Leetcode questions for interview preparation
 ### Two Pointers 
 - 125 Valid Palidrome
 - 283 Move Zeroes
+- 874 Backspace String Compare
 
 ## My Notes 
 
