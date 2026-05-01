@@ -1,27 +1,6 @@
 # leetcode-problems
 Leetcode questions for interview preparation
-
-## Topics 
-
-### Arrays, Hashmaps 
-- 1
-- 121
-- 169 (Boyer-Moore Voting Algorithm)
-- 217
-- 242
-- 268 (Sum Subtraction)
-- 383
-- 387
-- 389 (Sum Subtraction) 
-- 448 (In-place method)
-- 202 (Floyd's Cycle Detection)
-- 349
-- 350
-
-### Two Pointers 
-- 125 Valid Palidrome
-- 283 Move Zeroes
-- 874 Backspace String Compare
+https://docs.google.com/spreadsheets/d/1hnJ6xICrjj6thIi0UvM6driOE8BCW4pmDIwp6Ane8uo/edit?gid=0#gid=0
 
 ## My Notes 
 
