@@ -1,13 +1,24 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        intersection = []
-        nums_1_set = set(nums1)
+        nums1.sort() 
+        nums2.sort() 
 
-        for num in nums2: 
-            if num in nums_1_set: 
-                intersection.append(num)
-                nums_1_set.remove(num)
-        
-        return intersection 
+        result = [] 
+
+        i = 0 
+        j = 0 
+
+        while i < len(nums1) and j < len(nums2): 
+            if nums1[i] == nums2[j]: 
+                if not result or nums1[i] != result[-1]: 
+                    result.append(nums1[i])
+                i += 1 
+                j += 1 
+            elif nums1[i] < nums2[j]: 
+                i += 1 
+            else: 
+                j += 1 
+
+        return result
 
         
