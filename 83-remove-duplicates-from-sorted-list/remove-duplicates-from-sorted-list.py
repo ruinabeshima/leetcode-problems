@@ -17,6 +17,5 @@ class Solution:
                 tail = tail.next 
             pointer = pointer.next 
 
-        if tail: 
-            tail.next = None 
+        tail.next = None 
         return head
