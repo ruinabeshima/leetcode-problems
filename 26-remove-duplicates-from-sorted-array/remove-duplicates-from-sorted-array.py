@@ -1,5 +1,6 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        right = 1 
         left = 1 
 
         for right in range(1, len(nums)): 
@@ -7,5 +8,4 @@ class Solution:
                 nums[left] = nums[right]
                 left += 1 
 
-        return left 
-        
+        return left
