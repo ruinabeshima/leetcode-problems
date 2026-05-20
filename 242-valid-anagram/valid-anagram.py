@@ -1,22 +1,21 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        hashmap = {} 
-        
-        for letter in s: 
-            if letter in hashmap: 
-                hashmap[letter] += 1 
-            else: 
-                hashmap[letter] = 1
+        if len(s) != len(t): 
+            return False 
 
-        for letter in t: 
-            if letter in hashmap: 
-                hashmap[letter] -= 1 
-            else: 
-                return False 
-        
-        for key in hashmap: 
-            if hashmap[key] != 0: 
-                return False 
+        hashMap = {} 
 
+        for index, char in enumerate(s): 
+            if char in hashMap: 
+                hashMap[char] += 1 
+            else: 
+                hashMap[char] = 1
+
+        for char in t: 
+            if char in hashMap:
+                hashMap[char] -= 1 
+
+        for key in hashMap: 
+            if hashMap[key] != 0: 
+                return False 
         return True 
-
