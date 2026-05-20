@@ -1,14 +1,14 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        nums_dict = {} 
+        hashmap = {} 
 
         for index, num in enumerate(nums): 
-            complement = target - num 
+            complement = target - num
 
-            if complement in nums_dict: 
-                return [index, nums_dict[complement]]
+            if complement in hashmap: 
+                return [index, hashmap[complement]]
+            else: 
+                hashmap[num] = index
 
-            nums_dict[num] = index
-
-
+                    
         
