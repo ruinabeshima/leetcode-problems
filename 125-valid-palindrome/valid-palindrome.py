@@ -3,19 +3,17 @@ class Solution:
         left = 0 
         right = len(s) - 1 
 
-        while right >= left: 
-            if s[right].isalnum() == False and s[left].isalnum() == True: 
+        while right > left: 
+            while left < right and not s[left].isalnum(): 
+                left += 1  
+            while left < right and not s[right].isalnum(): 
                 right -= 1 
-            elif s[left].isalnum() == False and s[right].isalnum() == True: 
-                left += 1 
-            elif s[left].isalnum() == False and s[right].isalnum() == False: 
-                right -= 1 
-                left += 1 
-            else: 
-                if s[right].lower() != s[left].lower(): 
-                    return False 
-                left += 1 
-                right -= 1
+
+            if s[right].lower() != s[left].lower(): 
+                return False
+
+            left += 1 
+            right -= 1
         return True 
 
         
