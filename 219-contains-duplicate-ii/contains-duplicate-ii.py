@@ -1,9 +1,13 @@
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        hashmap = {}
+        hashset = set() 
+        left = 0
 
-        for index, num in enumerate(nums):  
-            if num in hashmap and abs(index - hashmap[num]) <= k: 
-                return True
-            hashmap[num] = index
+        for right in range(len(nums)): 
+            if right - left > k: 
+                hashset.remove(nums[left])
+                left += 1 
+            if nums[right] in hashset: 
+                return True 
+            hashset.add(nums[right])
         return False 
