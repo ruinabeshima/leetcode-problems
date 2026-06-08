@@ -3,12 +3,15 @@ class Solution:
         hashmap = {} 
 
         for str in strs: 
-            sorted_str = "".join(sorted(str))
+            letters = [0] * 26 
 
-            if sorted_str in hashmap: 
-                hashmap[sorted_str].append(str)
+            for letter in str: 
+                letters[ord(letter) - ord("a")] += 1 
+
+            if tuple(letters) in hashmap: 
+                hashmap[tuple(letters)].append(str)
             else: 
-                hashmap[sorted_str] = [str] 
+                hashmap[tuple(letters)] = [str] 
 
         
         return [hashmap[key] for key in hashmap]
