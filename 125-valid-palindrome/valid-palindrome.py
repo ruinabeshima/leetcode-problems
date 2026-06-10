@@ -4,17 +4,14 @@ class Solution:
         right = len(s) - 1 
 
         while right > left: 
-            while left < right and not s[left].isalnum(): 
-                left += 1  
-            while left < right and not s[right].isalnum(): 
+            while not s[right].isalnum() and right > left: 
                 right -= 1 
+            while not s[left].isalnum() and right > left: 
+                left += 1 
 
             if s[right].lower() != s[left].lower(): 
-                return False
-
+                return False 
+            right -= 1 
             left += 1 
-            right -= 1
+    
         return True 
-
-        
-
