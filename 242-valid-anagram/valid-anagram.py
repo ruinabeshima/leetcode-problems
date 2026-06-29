@@ -3,19 +3,19 @@ class Solution:
         if len(s) != len(t): 
             return False 
 
-        hashMap = {} 
-
-        for index, char in enumerate(s): 
-            if char in hashMap: 
-                hashMap[char] += 1 
-            else: 
-                hashMap[char] = 1
+        s_set = {} 
+        for char in s: 
+            s_set[char] = s_set.get(char, 0) + 1 
 
         for char in t: 
-            if char in hashMap:
-                hashMap[char] -= 1 
-
-        for key in hashMap: 
-            if hashMap[key] != 0: 
+            if char in s_set: 
+                s_set[char] -= 1 
+        
+        for key in s_set: 
+            if s_set[key] != 0: 
                 return False 
         return True 
+        
+            
+
+        
