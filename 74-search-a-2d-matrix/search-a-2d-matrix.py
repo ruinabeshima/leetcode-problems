@@ -1,21 +1,25 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        search_list = [] 
-        for row in matrix: 
-            for num in row: 
-                search_list.append(num)
-
+        m = len(matrix) # Whole 2D Matrix 
+        n = len(matrix[0]) # Each row 
 
         left = 0 
-        right = len(search_list) - 1
+        right = m * n - 1 
+
         while right >= left: 
             complement = left + (right - left) // 2 
-            if search_list[complement] == target: 
-                return True 
-            elif search_list[complement] < target: 
+            row = complement // n
+            col = complement % n 
+            if (matrix[row][col] == target):
+                return True
+            elif (matrix[row][col] < target): 
                 left = complement + 1 
             else: 
                 right = complement - 1 
-        return False 
+
+        return False
+
+
+
 
         return search_list
