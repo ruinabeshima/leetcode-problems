@@ -3,12 +3,9 @@ class Solution:
         hashmap = {} 
 
         for index, num in enumerate(nums): 
-            complement = target - num
-
+            complement = target - num 
             if complement in hashmap: 
                 return [index, hashmap[complement]]
-            else: 
-                hashmap[num] = index
+            hashmap[num] = index 
 
-                    
         
