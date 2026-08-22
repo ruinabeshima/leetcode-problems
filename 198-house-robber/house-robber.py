@@ -8,13 +8,12 @@ class Solution:
             return nums[0]
         if n == 1: 
             return max(nums[1], nums[0])
-        memo = {0: nums[0], 1: max(nums[1], nums[0])}
+        
+        dp = [0] * len(nums)
+        dp[0] = nums[0]
+        dp[1] = max(nums[1], nums[0])
        
-        def maxMoney(n):
-            if n in memo: 
-                return memo[n]
-            else: 
-                memo[n] = max(nums[n] + maxMoney(n - 2), maxMoney(n - 1))
-                return memo[n]
+        for i in range(2, len(nums)): 
+            dp[i] = max(nums[i] + dp[i - 2], dp[i - 1])
 
-        return maxMoney(n)
+        return dp[n]
