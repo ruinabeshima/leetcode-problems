@@ -9,15 +9,22 @@ class Node:
 from typing import Optional
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        mapping = {}
         
-        def clone(node): 
-            if node in mapping: 
-                return mapping[node]
+        hashmap = {}
 
-            mapping[node] = Node(node.val)
+        def dfs(node): 
+            if node in hashmap: 
+                return hashmap[node]
+
+            copy = Node(node.val)
+            hashmap[node] = copy 
             for neighbor in node.neighbors: 
-                mapping[node].neighbors.append(clone(neighbor))
-            return mapping[node]
+                copy.neighbors.append(dfs(neighbor))
+            return copy 
 
-        return clone(node) if node else None
+        return dfs(node) if node else None
+            
+
+
+
+        return dfs(node)
