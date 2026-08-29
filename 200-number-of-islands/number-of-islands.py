@@ -4,28 +4,19 @@ class Solution:
         seen = set()
         islands = 0 
 
-        def bfs(r, c): 
-            q = collections.deque()
-            q.append((r, c))
-            seen.add((r, c))
+        def dfs(row, col): 
+            seen.add((row, col))
 
             directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-            while q:
-                r, c = q.popleft()
-                for dr, dc in directions:
-                    row, col = r + dr, c + dc
-                    if row in range(rows) and col in range(cols) and grid[row][col] == "1" and (row, col) not in seen:
-                        seen.add((row, col))
-                        q.append((row, col))
+            for dr, dc in directions: 
+                r, c = row + dr, col + dc
+                if r in range(rows) and c in range(cols) and grid[r][c] == "1" and (r, c) not in seen: 
+                    dfs(r, c)
 
-        for r in range(rows): 
-            for c in range(cols): 
-                if grid[r][c] == "1" and (r, c) not in seen:
-                    bfs(r, c)
-                    islands += 1
-
-        return islands 
-
-
-
+        for row in range(rows): 
+            for col in range(cols): 
+                if grid[row][col] == "1" and (row, col) not in seen: 
+                    dfs(row, col)
+                    islands += 1 
         
+        return islands 
