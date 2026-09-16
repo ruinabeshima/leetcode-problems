@@ -5,18 +5,15 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
-        if not root: return 0 
-
-        stack = [[root, 1]] # LIFO
-        count = 1
-
-        while stack: 
-            node, depth = stack.pop()
-
-            count = max(count, depth)
-            if node.right: stack.append([node.right, depth + 1])
-            if node.left: stack.append([node.left, depth + 1])
+    def maxDepth(self, root: TreeNode | None) -> int:
         
-        return count
+        def depth(node): 
+            if not node: 
+                return 0
 
+            max_left = depth(node.left)
+            max_right = depth(node.right)
+
+            return 1 + max(max_left, max_right)
+
+        return depth(root)
