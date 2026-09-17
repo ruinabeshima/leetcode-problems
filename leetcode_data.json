@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17 04:59 UTC",
+  "generated_at": "2026-09-17 05:14 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -7,525 +7,600 @@
       "slug": "two-sum",
       "title": "Two Sum",
       "difficulty": "Easy",
-      "dir": "1-two-sum"
+      "dir": "1-two-sum",
+      "topic": ""
     },
     {
       "id": 2,
       "slug": "add-two-numbers",
       "title": "Add Two Numbers",
       "difficulty": "Medium",
-      "dir": "2-add-two-numbers"
+      "dir": "2-add-two-numbers",
+      "topic": ""
     },
     {
       "id": 3,
       "slug": "longest-substring-without-repeating-characters",
       "title": "Longest Substring Without Repeating Characters",
       "difficulty": "Medium",
-      "dir": "3-longest-substring-without-repeating-characters"
+      "dir": "3-longest-substring-without-repeating-characters",
+      "topic": ""
     },
     {
       "id": 5,
       "slug": "longest-palindromic-substring",
       "title": "Longest Palindromic Substring",
       "difficulty": "Medium",
-      "dir": "5-longest-palindromic-substring"
+      "dir": "5-longest-palindromic-substring",
+      "topic": ""
     },
     {
       "id": 11,
       "slug": "container-with-most-water",
       "title": "Container With Most Water",
       "difficulty": "Medium",
-      "dir": "11-container-with-most-water"
+      "dir": "11-container-with-most-water",
+      "topic": ""
     },
     {
       "id": 15,
       "slug": "3sum",
       "title": "3Sum",
       "difficulty": "Medium",
-      "dir": "15-3sum"
+      "dir": "15-3sum",
+      "topic": ""
     },
     {
       "id": 19,
       "slug": "remove-nth-node-from-end-of-list",
       "title": "Remove Nth Node From End of List",
       "difficulty": "Medium",
-      "dir": "19-remove-nth-node-from-end-of-list"
+      "dir": "19-remove-nth-node-from-end-of-list",
+      "topic": ""
     },
     {
       "id": 20,
       "slug": "valid-parentheses",
       "title": "Valid Parentheses",
       "difficulty": "Easy",
-      "dir": "20-valid-parentheses"
+      "dir": "20-valid-parentheses",
+      "topic": ""
     },
     {
       "id": 21,
       "slug": "merge-two-sorted-lists",
       "title": "Merge Two Sorted Lists",
       "difficulty": "Easy",
-      "dir": "21-merge-two-sorted-lists"
+      "dir": "21-merge-two-sorted-lists",
+      "topic": ""
     },
     {
       "id": 26,
       "slug": "remove-duplicates-from-sorted-array",
       "title": "Remove Duplicates from Sorted Array",
       "difficulty": "Easy",
-      "dir": "26-remove-duplicates-from-sorted-array"
+      "dir": "26-remove-duplicates-from-sorted-array",
+      "topic": ""
     },
     {
       "id": 27,
       "slug": "remove-element",
       "title": "Remove Element",
       "difficulty": "Easy",
-      "dir": "27-remove-element"
+      "dir": "27-remove-element",
+      "topic": ""
     },
     {
       "id": 36,
       "slug": "valid-sudoku",
       "title": "Valid Sudoku",
       "difficulty": "Medium",
-      "dir": "36-valid-sudoku"
+      "dir": "36-valid-sudoku",
+      "topic": ""
     },
     {
       "id": 42,
       "slug": "trapping-rain-water",
       "title": "Trapping Rain Water",
       "difficulty": "Hard",
-      "dir": "42-trapping-rain-water"
+      "dir": "42-trapping-rain-water",
+      "topic": ""
     },
     {
       "id": 49,
       "slug": "group-anagrams",
       "title": "Group Anagrams",
       "difficulty": "Medium",
-      "dir": "49-group-anagrams"
+      "dir": "49-group-anagrams",
+      "topic": ""
     },
     {
       "id": 70,
       "slug": "climbing-stairs",
       "title": "Climbing Stairs",
       "difficulty": "Easy",
-      "dir": "70-climbing-stairs"
+      "dir": "70-climbing-stairs",
+      "topic": ""
     },
     {
       "id": 74,
       "slug": "search-a-2d-matrix",
       "title": "Search a 2D Matrix",
       "difficulty": "Medium",
-      "dir": "74-search-a-2d-matrix"
+      "dir": "74-search-a-2d-matrix",
+      "topic": ""
     },
     {
       "id": 83,
       "slug": "remove-duplicates-from-sorted-list",
       "title": "Remove Duplicates from Sorted List",
       "difficulty": "Easy",
-      "dir": "83-remove-duplicates-from-sorted-list"
+      "dir": "83-remove-duplicates-from-sorted-list",
+      "topic": ""
     },
     {
       "id": 88,
       "slug": "merge-sorted-array",
       "title": "Merge Sorted Array",
       "difficulty": "Easy",
-      "dir": "88-merge-sorted-array"
+      "dir": "88-merge-sorted-array",
+      "topic": ""
     },
     {
       "id": 100,
       "slug": "same-tree",
       "title": "Same Tree",
       "difficulty": "Easy",
-      "dir": "100-same-tree"
+      "dir": "100-same-tree",
+      "topic": ""
     },
     {
       "id": 104,
       "slug": "maximum-depth-of-binary-tree",
       "title": "Maximum Depth of Binary Tree",
       "difficulty": "Easy",
-      "dir": "104-maximum-depth-of-binary-tree"
+      "dir": "104-maximum-depth-of-binary-tree",
+      "topic": ""
     },
     {
       "id": 121,
       "slug": "best-time-to-buy-and-sell-stock",
       "title": "Best Time to Buy and Sell Stock",
       "difficulty": "Easy",
-      "dir": "121-best-time-to-buy-and-sell-stock"
+      "dir": "121-best-time-to-buy-and-sell-stock",
+      "topic": ""
     },
     {
       "id": 125,
       "slug": "valid-palindrome",
       "title": "Valid Palindrome",
       "difficulty": "Easy",
-      "dir": "125-valid-palindrome"
+      "dir": "125-valid-palindrome",
+      "topic": ""
     },
     {
       "id": 128,
       "slug": "longest-consecutive-sequence",
       "title": "Longest Consecutive Sequence",
       "difficulty": "Medium",
-      "dir": "128-longest-consecutive-sequence"
+      "dir": "128-longest-consecutive-sequence",
+      "topic": ""
     },
     {
       "id": 133,
       "slug": "clone-graph",
       "title": "Clone Graph",
       "difficulty": "Medium",
-      "dir": "133-clone-graph"
+      "dir": "133-clone-graph",
+      "topic": ""
     },
     {
       "id": 138,
       "slug": "copy-list-with-random-pointer",
       "title": "Copy List with Random Pointer",
       "difficulty": "Medium",
-      "dir": "138-copy-list-with-random-pointer"
+      "dir": "138-copy-list-with-random-pointer",
+      "topic": ""
     },
     {
       "id": 141,
       "slug": "linked-list-cycle",
       "title": "Linked List Cycle",
       "difficulty": "Easy",
-      "dir": "141-linked-list-cycle"
+      "dir": "141-linked-list-cycle",
+      "topic": ""
     },
     {
       "id": 143,
       "slug": "reorder-list",
       "title": "Reorder List",
       "difficulty": "Medium",
-      "dir": "143-reorder-list"
+      "dir": "143-reorder-list",
+      "topic": ""
     },
     {
       "id": 146,
       "slug": "lru-cache",
       "title": "LRU Cache",
       "difficulty": "Medium",
-      "dir": "146-lru-cache"
+      "dir": "146-lru-cache",
+      "topic": ""
     },
     {
       "id": 153,
       "slug": "find-minimum-in-rotated-sorted-array",
       "title": "Find Minimum in Rotated Sorted Array",
       "difficulty": "Medium",
-      "dir": "153-find-minimum-in-rotated-sorted-array"
+      "dir": "153-find-minimum-in-rotated-sorted-array",
+      "topic": ""
     },
     {
       "id": 167,
       "slug": "two-sum-ii-input-array-is-sorted",
       "title": "Two Sum II - Input Array Is Sorted",
       "difficulty": "Medium",
-      "dir": "167-two-sum-ii-input-array-is-sorted"
+      "dir": "167-two-sum-ii-input-array-is-sorted",
+      "topic": ""
     },
     {
       "id": 169,
       "slug": "majority-element",
       "title": "Majority Element",
       "difficulty": "Easy",
-      "dir": "169-majority-element"
+      "dir": "169-majority-element",
+      "topic": ""
     },
     {
       "id": 198,
       "slug": "house-robber",
       "title": "House Robber",
       "difficulty": "Medium",
-      "dir": "198-house-robber"
+      "dir": "198-house-robber",
+      "topic": ""
     },
     {
       "id": 200,
       "slug": "number-of-islands",
       "title": "Number of Islands",
       "difficulty": "Medium",
-      "dir": "200-number-of-islands"
+      "dir": "200-number-of-islands",
+      "topic": ""
     },
     {
       "id": 202,
       "slug": "happy-number",
       "title": "Happy Number",
       "difficulty": "Easy",
-      "dir": "202-happy-number"
+      "dir": "202-happy-number",
+      "topic": ""
     },
     {
       "id": 203,
       "slug": "remove-linked-list-elements",
       "title": "Remove Linked List Elements",
       "difficulty": "Easy",
-      "dir": "203-remove-linked-list-elements"
+      "dir": "203-remove-linked-list-elements",
+      "topic": ""
     },
     {
       "id": 206,
       "slug": "reverse-linked-list",
       "title": "Reverse Linked List",
       "difficulty": "Easy",
-      "dir": "206-reverse-linked-list"
+      "dir": "206-reverse-linked-list",
+      "topic": ""
     },
     {
       "id": 207,
       "slug": "course-schedule",
       "title": "Course Schedule",
       "difficulty": "Medium",
-      "dir": "207-course-schedule"
+      "dir": "207-course-schedule",
+      "topic": ""
     },
     {
       "id": 213,
       "slug": "house-robber-ii",
       "title": "House Robber II",
       "difficulty": "Medium",
-      "dir": "213-house-robber-ii"
+      "dir": "213-house-robber-ii",
+      "topic": ""
     },
     {
       "id": 217,
       "slug": "contains-duplicate",
       "title": "Contains Duplicate",
       "difficulty": "Easy",
-      "dir": "217-contains-duplicate"
+      "dir": "217-contains-duplicate",
+      "topic": ""
     },
     {
       "id": 219,
       "slug": "contains-duplicate-ii",
       "title": "Contains Duplicate II",
       "difficulty": "Easy",
-      "dir": "219-contains-duplicate-ii"
+      "dir": "219-contains-duplicate-ii",
+      "topic": ""
     },
     {
       "id": 226,
       "slug": "invert-binary-tree",
       "title": "Invert Binary Tree",
       "difficulty": "Easy",
-      "dir": "226-invert-binary-tree"
+      "dir": "226-invert-binary-tree",
+      "topic": ""
     },
     {
       "id": 234,
       "slug": "palindrome-linked-list",
       "title": "Palindrome Linked List",
       "difficulty": "Easy",
-      "dir": "234-palindrome-linked-list"
+      "dir": "234-palindrome-linked-list",
+      "topic": ""
     },
     {
       "id": 238,
       "slug": "product-of-array-except-self",
       "title": "Product of Array Except Self",
       "difficulty": "Medium",
-      "dir": "238-product-of-array-except-self"
+      "dir": "238-product-of-array-except-self",
+      "topic": ""
     },
     {
       "id": 242,
       "slug": "valid-anagram",
       "title": "Valid Anagram",
       "difficulty": "Easy",
-      "dir": "242-valid-anagram"
+      "dir": "242-valid-anagram",
+      "topic": ""
     },
     {
       "id": 268,
       "slug": "missing-number",
       "title": "Missing Number",
       "difficulty": "Easy",
-      "dir": "268-missing-number"
+      "dir": "268-missing-number",
+      "topic": ""
     },
     {
       "id": 283,
       "slug": "move-zeroes",
       "title": "Move Zeroes",
       "difficulty": "Easy",
-      "dir": "283-move-zeroes"
+      "dir": "283-move-zeroes",
+      "topic": ""
     },
     {
       "id": 287,
       "slug": "find-the-duplicate-number",
       "title": "Find the Duplicate Number",
       "difficulty": "Medium",
-      "dir": "287-find-the-duplicate-number"
+      "dir": "287-find-the-duplicate-number",
+      "topic": ""
     },
     {
       "id": 344,
       "slug": "reverse-string",
       "title": "Reverse String",
       "difficulty": "Easy",
-      "dir": "344-reverse-string"
+      "dir": "344-reverse-string",
+      "topic": ""
     },
     {
       "id": 347,
       "slug": "top-k-frequent-elements",
       "title": "Top K Frequent Elements",
       "difficulty": "Medium",
-      "dir": "347-top-k-frequent-elements"
+      "dir": "347-top-k-frequent-elements",
+      "topic": ""
     },
     {
       "id": 349,
       "slug": "intersection-of-two-arrays",
       "title": "Intersection of Two Arrays",
       "difficulty": "Easy",
-      "dir": "349-intersection-of-two-arrays"
+      "dir": "349-intersection-of-two-arrays",
+      "topic": ""
     },
     {
       "id": 350,
       "slug": "intersection-of-two-arrays-ii",
       "title": "Intersection of Two Arrays II",
       "difficulty": "Easy",
-      "dir": "350-intersection-of-two-arrays-ii"
+      "dir": "350-intersection-of-two-arrays-ii",
+      "topic": ""
     },
     {
       "id": 383,
       "slug": "ransom-note",
       "title": "Ransom Note",
       "difficulty": "Easy",
-      "dir": "383-ransom-note"
+      "dir": "383-ransom-note",
+      "topic": ""
     },
     {
       "id": 387,
       "slug": "first-unique-character-in-a-string",
       "title": "First Unique Character in a String",
       "difficulty": "Easy",
-      "dir": "387-first-unique-character-in-a-string"
+      "dir": "387-first-unique-character-in-a-string",
+      "topic": ""
     },
     {
       "id": 389,
       "slug": "find-the-difference",
       "title": "Find the Difference",
       "difficulty": "Easy",
-      "dir": "389-find-the-difference"
+      "dir": "389-find-the-difference",
+      "topic": ""
     },
     {
       "id": 392,
       "slug": "is-subsequence",
       "title": "Is Subsequence",
       "difficulty": "Easy",
-      "dir": "392-is-subsequence"
+      "dir": "392-is-subsequence",
+      "topic": ""
     },
     {
       "id": 417,
       "slug": "pacific-atlantic-water-flow",
       "title": "Pacific Atlantic Water Flow",
       "difficulty": "Medium",
-      "dir": "417-pacific-atlantic-water-flow"
+      "dir": "417-pacific-atlantic-water-flow",
+      "topic": ""
     },
     {
       "id": 448,
       "slug": "find-all-numbers-disappeared-in-an-array",
       "title": "Find All Numbers Disappeared in an Array",
       "difficulty": "Easy",
-      "dir": "448-find-all-numbers-disappeared-in-an-array"
+      "dir": "448-find-all-numbers-disappeared-in-an-array",
+      "topic": ""
     },
     {
       "id": 572,
       "slug": "subtree-of-another-tree",
       "title": "Subtree of Another Tree",
       "difficulty": "Easy",
-      "dir": "572-subtree-of-another-tree"
+      "dir": "572-subtree-of-another-tree",
+      "topic": ""
     },
     {
       "id": 643,
       "slug": "maximum-average-subarray-i",
       "title": "Maximum Average Subarray I",
       "difficulty": "Easy",
-      "dir": "643-maximum-average-subarray-i"
+      "dir": "643-maximum-average-subarray-i",
+      "topic": ""
     },
     {
       "id": 647,
       "slug": "palindromic-substrings",
       "title": "Palindromic Substrings",
       "difficulty": "Medium",
-      "dir": "647-palindromic-substrings"
+      "dir": "647-palindromic-substrings",
+      "topic": ""
     },
     {
       "id": 680,
       "slug": "valid-palindrome-ii",
       "title": "Valid Palindrome II",
       "difficulty": "Easy",
-      "dir": "680-valid-palindrome-ii"
+      "dir": "680-valid-palindrome-ii",
+      "topic": ""
     },
     {
       "id": 682,
       "slug": "baseball-game",
       "title": "Baseball Game",
       "difficulty": "Easy",
-      "dir": "682-baseball-game"
+      "dir": "682-baseball-game",
+      "topic": ""
     },
     {
       "id": 695,
       "slug": "max-area-of-island",
       "title": "Max Area of Island",
       "difficulty": "Medium",
-      "dir": "695-max-area-of-island"
+      "dir": "695-max-area-of-island",
+      "topic": ""
     },
     {
       "id": 745,
       "slug": "find-smallest-letter-greater-than-target",
       "title": "Find Smallest Letter Greater Than Target",
       "difficulty": "Easy",
-      "dir": "745-find-smallest-letter-greater-than-target"
+      "dir": "745-find-smallest-letter-greater-than-target",
+      "topic": ""
     },
     {
       "id": 792,
       "slug": "binary-search",
       "title": "Binary Search",
       "difficulty": "Easy",
-      "dir": "792-binary-search"
+      "dir": "792-binary-search",
+      "topic": ""
     },
     {
       "id": 874,
       "slug": "backspace-string-compare",
       "title": "Backspace String Compare",
       "difficulty": "Easy",
-      "dir": "874-backspace-string-compare"
+      "dir": "874-backspace-string-compare",
+      "topic": ""
     },
     {
       "id": 908,
       "slug": "middle-of-the-linked-list",
       "title": "Middle of the Linked List",
       "difficulty": "Easy",
-      "dir": "908-middle-of-the-linked-list"
+      "dir": "908-middle-of-the-linked-list",
+      "topic": ""
     },
     {
       "id": 1013,
       "slug": "fibonacci-number",
       "title": "Fibonacci Number",
       "difficulty": "Easy",
-      "dir": "1013-fibonacci-number"
+      "dir": "1013-fibonacci-number",
+      "topic": ""
     },
     {
       "id": 1019,
       "slug": "squares-of-a-sorted-array",
       "title": "Squares of a Sorted Array",
       "difficulty": "Easy",
-      "dir": "1019-squares-of-a-sorted-array"
+      "dir": "1019-squares-of-a-sorted-array",
+      "topic": ""
     },
     {
       "id": 1036,
       "slug": "rotting-oranges",
       "title": "Rotting Oranges",
       "difficulty": "Medium",
-      "dir": "1036-rotting-oranges"
+      "dir": "1036-rotting-oranges",
+      "topic": ""
     },
     {
       "id": 1138,
       "slug": "grumpy-bookstore-owner",
       "title": "Grumpy Bookstore Owner",
       "difficulty": "Medium",
-      "dir": "1138-grumpy-bookstore-owner"
+      "dir": "1138-grumpy-bookstore-owner",
+      "topic": ""
     },
     {
       "id": 1445,
       "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
       "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
       "difficulty": "Medium",
-      "dir": "1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold"
+      "dir": "1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+      "topic": ""
     },
     {
       "id": 1603,
       "slug": "running-sum-of-1d-array",
       "title": "Running Sum of 1d Array",
       "difficulty": "Easy",
-      "dir": "1603-running-sum-of-1d-array"
+      "dir": "1603-running-sum-of-1d-array",
+      "topic": ""
     },
     {
       "id": 1894,
       "slug": "merge-strings-alternately",
       "title": "Merge Strings Alternately",
       "difficulty": "Easy",
-      "dir": "1894-merge-strings-alternately"
+      "dir": "1894-merge-strings-alternately",
+      "topic": ""
     },
     {
       "id": 2058,
       "slug": "concatenation-of-array",
       "title": "Concatenation of Array",
       "difficulty": "Easy",
-      "dir": "2058-concatenation-of-array"
+      "dir": "2058-concatenation-of-array",
+      "topic": ""
     }
   ],
   "history": {
