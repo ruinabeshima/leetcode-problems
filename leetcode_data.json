@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17 05:16 UTC",
+  "generated_at": "2026-09-17 05:25 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -459,6 +459,14 @@
       "topic": "arrays-hashing"
     },
     {
+      "id": 547,
+      "slug": "number-of-provinces",
+      "title": "Number of Provinces",
+      "difficulty": "Medium",
+      "dir": "graphs/547-number-of-provinces",
+      "topic": "graphs"
+    },
+    {
       "id": 572,
       "slug": "subtree-of-another-tree",
       "title": "Subtree of Another Tree",
@@ -539,6 +547,14 @@
       "topic": "linked-list"
     },
     {
+      "id": 994,
+      "slug": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "dir": "graphs/994-rotting-oranges",
+      "topic": "graphs"
+    },
+    {
       "id": 1013,
       "slug": "fibonacci-number",
       "title": "Fibonacci Number",
@@ -553,14 +569,6 @@
       "difficulty": "Easy",
       "dir": "binary-search/1019-squares-of-a-sorted-array",
       "topic": "binary-search"
-    },
-    {
-      "id": 1036,
-      "slug": "rotting-oranges",
-      "title": "Rotting Oranges",
-      "difficulty": "Medium",
-      "dir": "graphs/1036-rotting-oranges",
-      "topic": "graphs"
     },
     {
       "id": 1138,
@@ -621,6 +629,9 @@
     "invert-binary-tree": [
       "2026-09-16"
     ],
+    "number-of-provinces": [
+      "2026-09-12"
+    ],
     "rotting-oranges": [
       "2026-09-12"
     ],
@@ -659,6 +670,10 @@
       "2026-09-01",
       "2026-05-04",
       "2026-05-03"
+    ],
+    "longest-consecutive-sequence": [
+      "2026-09-01",
+      "2026-06-09"
     ],
     "pacific-atlantic-water-flow": [
       "2026-08-22"
@@ -757,9 +772,6 @@
       "2026-06-10",
       "2026-05-21",
       "2026-04-28"
-    ],
-    "longest-consecutive-sequence": [
-      "2026-06-09"
     ],
     "valid-sudoku": [
       "2026-06-09"

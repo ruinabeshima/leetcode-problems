@@ -1,6 +1,6 @@
 # LeetCode progress
 
-Generated 2026-09-17 05:16 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
+Generated 2026-09-17 05:25 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
 
 Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritten.
 
@@ -9,9 +9,9 @@ Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritt
 | Difficulty | Solved |
 |---|---|
 | Easy | 45 |
-| Medium | 29 |
+| Medium | 30 |
 | Hard | 1 |
-| All | 75 |
+| All | 76 |
 
 ## Curriculum progress
 
@@ -99,14 +99,13 @@ the committed one. Reading the old solution and nodding is not recall.
 A problem leaves this queue by being accepted on LeetCode again, which is
 what writes the new commit — retyping it locally does not advance the ladder.
 
-67 of 75 are due — highest-value first.
+68 of 76 are due — highest-value first.
 
 | Problem | List | Last solved | Age | Interval | Reps |
 |---|---|---|---|---|---|
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Blind 75 | 2026-05-08 | 132d | 3d | 1 |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Blind 75 | 2026-06-08 | 101d | 3d | 1 |
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Blind 75 | 2026-06-08 | 101d | 3d | 1 |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Blind 75 | 2026-06-09 | 100d | 3d | 1 |
 | [3Sum](https://leetcode.com/problems/3sum/) | Blind 75 | 2026-06-11 | 98d | 3d | 1 |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Blind 75 | 2026-06-10 | 99d | 21d | 3 |
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Blind 75 | 2026-06-11 | 98d | 21d | 3 |
@@ -118,14 +117,15 @@ what writes the new commit — retyping it locally does not advance the ladder.
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Blind 75 | 2026-06-29 | 80d | 21d | 3 |
 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Blind 75 | 2026-08-22 | 26d | 3d | 1 |
 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Blind 75 | 2026-08-22 | 26d | 3d | 1 |
-| … and 52 more | | | | | |
+| [House Robber](https://leetcode.com/problems/house-robber/) | Blind 75 | 2026-08-22 | 26d | 3d | 1 |
+| … and 53 more | | | | | |
 
 ## Coverage by block
 
 Each block is the memorised code in that file; each twist is a one-line
 change to it. A missing canonical problem is a gap worth filling.
 
-### `graphs.py` — 5/19 canonical
+### `blocks/graphs.py` — 6/19 canonical
 
 - **BFS with levels** (0/2)  ← **never done**
   - [ ] [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
@@ -139,9 +139,9 @@ change to it. A missing canonical problem is a gap worth filling.
 - **boundary-in flood fill (twist)** (1/2)
   - [ ] [surrounded-regions](https://leetcode.com/problems/surrounded-regions/)
   - [x] [pacific-atlantic-water-flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
-- **DSU** (0/3)  ← **never done**
+- **DSU** (1/3)
   - [ ] [redundant-connection](https://leetcode.com/problems/redundant-connection/)
-  - [ ] [number-of-provinces](https://leetcode.com/problems/number-of-provinces/)
+  - [x] [number-of-provinces](https://leetcode.com/problems/number-of-provinces/)
   - [ ] [accounts-merge](https://leetcode.com/problems/accounts-merge/)
 - **Kahn's** (1/2)
   - [x] [course-schedule](https://leetcode.com/problems/course-schedule/)
@@ -157,7 +157,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - **0-1 BFS (twist)** (0/1)  ← **never done**
   - [ ] [minimum-obstacle-removal-to-reach-corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)
 
-### `trees.py` — 1/13 canonical
+### `blocks/trees.py` — 1/13 canonical
 
 - **bottom-up DFS** (1/4)
   - [x] [maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
@@ -178,7 +178,7 @@ change to it. A missing canonical problem is a gap worth filling.
   - [ ] [lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
   - [ ] [lowest-common-ancestor-of-a-binary-search-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
-### `linked_lists.py` — 8/10 canonical
+### `blocks/linked_lists.py` — 8/10 canonical
 
 - **dummy head** (2/2)
   - [x] [remove-linked-list-elements](https://leetcode.com/problems/remove-linked-list-elements/)
@@ -196,7 +196,7 @@ change to it. A missing canonical problem is a gap worth filling.
   - [x] [reorder-list](https://leetcode.com/problems/reorder-list/)
   - [x] [palindrome-linked-list](https://leetcode.com/problems/palindrome-linked-list/)
 
-### `heaps.py` — 1/5 canonical
+### `blocks/heaps.py` — 1/5 canonical
 
 - **top-K with a size-k heap** (1/4)
   - [ ] [kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
@@ -206,7 +206,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - **two-heap median** (0/1)  ← **never done**
   - [ ] [find-median-from-data-stream](https://leetcode.com/problems/find-median-from-data-stream/)
 
-### `backtracking.py` — 0/10 canonical
+### `blocks/backtracking.py` — 0/10 canonical
 
 - **choose/explore/undo** (0/4)  ← **never done**
   - [ ] [subsets](https://leetcode.com/problems/subsets/)
@@ -224,7 +224,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - **partition (twist)** (0/1)  ← **never done**
   - [ ] [palindrome-partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 
-### `tries.py` — 0/3 canonical
+### `blocks/tries.py` — 0/3 canonical
 
 - **children dict + is_word** (0/1)  ← **never done**
   - [ ] [implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/)
@@ -233,7 +233,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - **trie + grid backtracking (twist)** (0/1)  ← **never done**
   - [ ] [word-search-ii](https://leetcode.com/problems/word-search-ii/)
 
-### `sliding_window.py` — 7/12 canonical
+### `blocks/sliding_window.py` — 7/12 canonical
 
 - **longest (shrink while invalid)** (1/3)
   - [x] [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
@@ -260,7 +260,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - 27. [Remove Element](https://leetcode.com/problems/remove-element/) · Easy · 1 solve
 - 36. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) · Medium · 1 solve
 - 49. [Group Anagrams](https://leetcode.com/problems/group-anagrams/) · Medium · 2 solves
-- 128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) · Medium · 1 solve
+- 128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) · Medium · 2 solves
 - 169. [Majority Element](https://leetcode.com/problems/majority-element/) · Easy · 1 solve
 - 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) · Easy · 5 solves
 - 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) · Medium · 1 solve
@@ -290,13 +290,14 @@ change to it. A missing canonical problem is a gap worth filling.
 
 </details>
 
-<details><summary><b>Not on a NeetCode list</b> (11)</summary>
+<details><summary><b>Not on a NeetCode list</b> (12)</summary>
 
 - 349. [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) · Easy · 2 solves
 - 350. [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) · Easy · 1 solve
 - 383. [Ransom Note](https://leetcode.com/problems/ransom-note/) · Easy · 1 solve
 - 387. [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) · Easy · 1 solve
 - 389. [Find the Difference](https://leetcode.com/problems/find-the-difference/) · Easy · 1 solve
+- 547. [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) · Medium · 1 solve
 - 643. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) · Easy · 1 solve
 - 745. [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) · Easy · 1 solve
 - 874. [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) · Easy · 1 solve
@@ -329,7 +330,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - 207. [Course Schedule](https://leetcode.com/problems/course-schedule/) · Medium · 2 solves
 - 417. [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) · Medium · 1 solve
 - 695. [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) · Medium · 1 solve
-- 1036. [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) · Medium · 1 solve
+- 994. [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) · Medium · 1 solve
 
 </details>
 
