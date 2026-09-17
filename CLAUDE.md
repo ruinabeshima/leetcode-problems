@@ -78,6 +78,8 @@ Three sections matter, and they answer different questions:
 
 - **Curriculum progress** — where they are in the study lists. Answers *what next*.
 - **Due for review** — solved problems that have gone cold. Answers *what to redo*.
+  Capped at one problem a day; see *Active recall*. Recommend what it names, not the
+  backlog behind it.
 - **Coverage by block** — a canonical problem for every block and twist named below,
   marked solved or not, so a block flagged **never done** is a real gap. Answers *which
   technique is missing*.
@@ -138,6 +140,21 @@ maintenance this design costs, and the trade for not depending on a browser exte
 Re-solving is scheduled by a fixed ladder keyed to rep count: the 1st solve comes back in
 3 days, then 7, 21, 60, 180. Reps and recency come from git history in the solutions repo,
 so there is nothing to log.
+
+**One review per day — this is a hard limit, not a target.** `REVIEWS_PER_DAY` in
+`leetcode_sync.py` sets it (override a single run with `--reviews-per-day N`). The queue
+in `LEETCODE.md` names today's one problem and folds the rest away.
+
+The backlog is not the workload. Dozens of problems can be cold at once, and listing them
+all turns the queue into something nobody acts on. **Never recommend more review problems
+than the limit, never present the folded-away backlog as today's work, and do not suggest
+catching up by doing several.** If they want more volume, that is new problems from the
+curriculum, not extra reviews.
+
+Whether today's review is already done is computed, not logged: a commit dated today on a
+problem that had been solved before is a review, and `LEETCODE.md` then says *Done for
+today*. A first-ever solve today is new work and does not spend the quota. When the file
+says the day is done, say so and move on to new problems — do not offer one anyway.
 
 The protocol is **recall, not reading**:
 

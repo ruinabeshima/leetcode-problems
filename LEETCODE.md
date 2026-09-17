@@ -1,6 +1,6 @@
 # LeetCode progress
 
-Generated 2026-09-17 05:25 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
+Generated 2026-09-17 05:31 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
 
 Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritten.
 
@@ -99,26 +99,38 @@ the committed one. Reading the old solution and nodding is not recall.
 A problem leaves this queue by being accepted on LeetCode again, which is
 what writes the new commit — retyping it locally does not advance the ladder.
 
-68 of 76 are due — highest-value first.
+**Limit: 1 review per day.** 68 of 76 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~68 days of review.
+
+### Done for today
+
+Already re-solved **Course Schedule** today. Nothing further is due — do new problems instead, or stop.
+
+Next in line tomorrow:
 
 | Problem | List | Last solved | Age | Interval | Reps |
 |---|---|---|---|---|---|
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Blind 75 | 2026-05-08 | 132d | 3d | 1 |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Blind 75 | 2026-06-08 | 101d | 3d | 1 |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Blind 75 | 2026-06-08 | 101d | 3d | 1 |
-| [3Sum](https://leetcode.com/problems/3sum/) | Blind 75 | 2026-06-11 | 98d | 3d | 1 |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Blind 75 | 2026-06-10 | 99d | 21d | 3 |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Blind 75 | 2026-06-11 | 98d | 21d | 3 |
-| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Blind 75 | 2026-07-01 | 78d | 3d | 1 |
-| [Reorder List](https://leetcode.com/problems/reorder-list/) | Blind 75 | 2026-07-01 | 78d | 3d | 1 |
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Blind 75 | 2026-06-29 | 80d | 7d | 2 |
-| [Missing Number](https://leetcode.com/problems/missing-number/) | Blind 75 | 2026-06-29 | 80d | 7d | 2 |
-| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Blind 75 | 2026-07-01 | 78d | 7d | 2 |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Blind 75 | 2026-06-29 | 80d | 21d | 3 |
-| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Blind 75 | 2026-08-22 | 26d | 3d | 1 |
-| [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Blind 75 | 2026-08-22 | 26d | 3d | 1 |
-| [House Robber](https://leetcode.com/problems/house-robber/) | Blind 75 | 2026-08-22 | 26d | 3d | 1 |
-| … and 53 more | | | | | |
+
+<details><summary>The other 67 queued, highest-value first</summary>
+
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) — Blind 75, 101d since last solve, 1 rep
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Blind 75, 101d since last solve, 1 rep
+- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 98d since last solve, 1 rep
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 99d since last solve, 3 reps
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 98d since last solve, 3 reps
+- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 78d since last solve, 1 rep
+- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 78d since last solve, 1 rep
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 80d since last solve, 2 reps
+- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 80d since last solve, 2 reps
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 78d since last solve, 2 reps
+- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 80d since last solve, 3 reps
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 26d since last solve, 1 rep
+- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 26d since last solve, 1 rep
+- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 26d since last solve, 1 rep
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 26d since last solve, 1 rep
+- … and 52 more
+
+</details>
 
 ## Coverage by block
 

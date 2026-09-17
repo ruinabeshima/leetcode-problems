@@ -70,6 +70,16 @@ CURRICULUM = [
 REVIEW_LADDER = [3, 7, 21, 60, 180]
 REVIEW_SHOWN = 15  # rows in the markdown table; the rest are counted, not listed
 
+# How many problems to review in a day. THE BACKLOG IS NOT THE WORKLOAD: once a
+# few dozen problems have gone cold, printing all of them is a wall rather than
+# a plan, and the queue stops being something anyone acts on. So the queue names
+# today's problem and counts the rest.
+#
+# Whether today's is already done is computed, like everything else here: a
+# commit dated today on a problem that had been solved before is a review. A
+# first-ever solve is new work and does not spend the day's quota.
+REVIEWS_PER_DAY = 1
+
 # The canonical problem for each block and each named twist in CLAUDE.md. This
 # is what turns "you solved 40 graph problems" into "you have never done
 # Kahn's". Edit freely -- it is a study list, not data from anywhere.
@@ -228,6 +238,18 @@ def solve_history(problems_dir):
     return {slug: sorted(dates, reverse=True) for slug, dates in history.items()}
 
 
+def reviews_done_today(history, today=None):
+    """Problems re-solved today, newest first.
+
+    Distinguishes a review from new work by rep count: a problem whose only
+    solve date is today is a first solve, not a review, and must not count
+    against the day's quota.
+    """
+    today = today or datetime.now(timezone.utc).date()
+    return [slug for slug, dates in history.items()
+            if dates and dates[0] == today and len(dates) > 1]
+
+
 def due_for_review(history, today=None):
     """Problems past their interval, most overdue first."""
     today = today or datetime.now(timezone.utc).date()
@@ -340,7 +362,7 @@ def render_curriculum(lists, solved_slugs):
     return lines
 
 
-def render_review(history, titles, lists=None):
+def render_review(history, titles, lists=None, per_day=REVIEWS_PER_DAY):
     """The active-recall queue: what has gone cold, most valuable first.
 
     Ordered by curriculum tier before staleness. Sorting on overdue days alone
@@ -376,22 +398,55 @@ def render_review(history, titles, lists=None):
         return lines
 
     due.sort(key=lambda d: (rank.get(d["slug"], off_list), -d["overdue"]))
-    add(f"{len(due)} of {len(history)} are due — highest-value first.")
+    done = reviews_done_today(history)
+    remaining = max(0, per_day - len(done))
+    days_to_clear = -(-len(due) // per_day) if per_day else 0
+
+    plural = "" if per_day == 1 else "s"
+    add(f"**Limit: {per_day} review{plural} per day.** {len(due)} of {len(history)} "
+        f"solved problems are cold, but that is the backlog, not today's work — "
+        f"at {per_day}/day it is ~{days_to_clear} days of review.")
+    add("")
+
+    if not remaining:
+        names = ", ".join(f"**{titles.get(s, s)}**" for s in done)
+        add(f"### Done for today")
+        add("")
+        add(f"Already re-solved {names} today. Nothing further is due — "
+            f"do new problems instead, or stop.")
+        add("")
+        add(f"Next in line tomorrow:")
+    else:
+        add(f"### Today — {remaining} to do")
     add("")
     add("| Problem | List | Last solved | Age | Interval | Reps |")
     add("|---|---|---|---|---|---|")
-    for item in due[:REVIEW_SHOWN]:
+    shown = due[:max(remaining, per_day)]
+    for item in shown:
         tier = tier_name.get(rank.get(item["slug"], off_list), "—")
         add(f"| [{titles.get(item['slug'], item['slug'])}]"
             f"(https://leetcode.com/problems/{item['slug']}/) | {tier} "
             f"| {item['last']} | {item['age']}d | {item['interval']}d | {item['reps']} |")
-    if len(due) > REVIEW_SHOWN:
-        add(f"| … and {len(due) - REVIEW_SHOWN} more | | | | | |")
     add("")
+    if len(due) > len(shown):
+        add(f"<details><summary>The other {len(due) - len(shown)} queued, "
+            f"highest-value first</summary>")
+        add("")
+        for item in due[len(shown):len(shown) + REVIEW_SHOWN]:
+            tier = tier_name.get(rank.get(item["slug"], off_list), "—")
+            add(f"- [{titles.get(item['slug'], item['slug'])}]"
+                f"(https://leetcode.com/problems/{item['slug']}/) — {tier}, "
+                f"{item['age']}d since last solve, {item['reps']} rep"
+                f"{'' if item['reps'] == 1 else 's'}")
+        if len(due) > len(shown) + REVIEW_SHOWN:
+            add(f"- … and {len(due) - len(shown) - REVIEW_SHOWN} more")
+        add("")
+        add("</details>")
+        add("")
     return lines
 
 
-def render_markdown(record, lists=None):
+def render_markdown(record, lists=None, per_day=REVIEWS_PER_DAY):
     problems = record["problems"]
     solved_slugs = {p["slug"] for p in problems}
     titles = {p["slug"]: p["title"] for p in problems}
@@ -424,7 +479,7 @@ def render_markdown(record, lists=None):
     if lists:
         lines.extend(render_curriculum(lists, solved_slugs))
     if history:
-        lines.extend(render_review(history, titles, lists))
+        lines.extend(render_review(history, titles, lists, per_day))
 
     add("## Coverage by block")
     add("")
@@ -476,6 +531,10 @@ def main():
                     help="where to write output")
     ap.add_argument("--refresh-lists", action="store_true",
                     help=f"re-download the NeetCode study lists into {LISTS_FILE}")
+    ap.add_argument("--reviews-per-day", type=int, default=REVIEWS_PER_DAY,
+                    metavar="N", help="how many review problems a day the queue asks "
+                    f"for (default: {REVIEWS_PER_DAY}); edit REVIEWS_PER_DAY to change "
+                    "it for good")
     args = ap.parse_args()
 
     out = Path(args.out_dir)
@@ -489,7 +548,9 @@ def main():
 
     history = solve_history(problems_dir)
     if history:
-        print(f"  {len(history)} with git history, {len(due_for_review(history))} due")
+        done = len(reviews_done_today(history))
+        print(f"  {len(history)} with git history, {len(due_for_review(history))} due; "
+              f"{done}/{args.reviews_per_day} of today's reviews done")
     else:
         print("  no git history found — review queue skipped")
 
@@ -505,7 +566,7 @@ def main():
 
     json_path, md_path = out / "leetcode_data.json", out / "LEETCODE.md"
     json_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
-    md_path.write_text(render_markdown(record, lists) + "\n")
+    md_path.write_text(render_markdown(record, lists, args.reviews_per_day) + "\n")
     print(f"Wrote {json_path}")
     print(f"Wrote {md_path}")
 
