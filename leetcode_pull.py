@@ -282,6 +282,17 @@ def problem_dir(repo, question, patterns, tags):
     existing = topics.find_problem_dirs(repo).get(slug)
     if existing and Path(existing).name == name:
         return Path(repo) / existing       # already filed; do not fight the user
+
+    # The question payload already carries topicTags, so a problem NeetCode
+    # never listed can still be classified -- with no extra request. Without
+    # this, topic_for() sees no pattern and no cached tags and quietly returns
+    # misc/, which is how Number of Provinces ended up filed there.
+    if slug not in tags:
+        fetched = [t["name"] for t in question.get("topicTags") or []]
+        if fetched:
+            tags[slug] = fetched
+            topics.save_tags(repo, tags)
+
     folder = topics.topic_for(slug, patterns, tags)
     return Path(repo) / folder / name
 

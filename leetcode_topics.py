@@ -72,16 +72,28 @@ PATTERN_DIRS = {
 # so this runs specific -> generic. "Array" and "Hash Table" sit at the bottom
 # because nearly everything carries them.
 TAG_DIRS = [
+    # These strings are LeetCode's exact tag names, checked against the API --
+    # they are not guessable. It is "Union-Find" and not "Union Find", and
+    # "Graph Theory" and not "Graph"; getting either wrong silently sends the
+    # problem to misc/ instead of failing loudly.
     ("Trie", "tries"),
-    ("Union Find", "advanced-graphs"),
+    # Weighted/structured graph work outranks plain connectivity, so a problem
+    # tagged both Union-Find and Dijkstra lands in advanced-graphs.
     ("Shortest Path", "advanced-graphs"),
+    ("Dijkstra's Algorithm", "advanced-graphs"),
     ("Minimum Spanning Tree", "advanced-graphs"),
+    ("Prim's Algorithm", "advanced-graphs"),
+    ("Kruskal's Algorithm", "advanced-graphs"),
     ("Strongly Connected Component", "advanced-graphs"),
+    # NeetCode files every union-find problem it lists under plain Graphs
+    # (Redundant Connection, Accounts Merge, Number of Connected Components),
+    # so match that rather than promoting them to advanced.
+    ("Union-Find", "graphs"),
     ("Topological Sort", "graphs"),
     ("Binary Search Tree", "trees"),
     ("Binary Tree", "trees"),
     ("Tree", "trees"),
-    ("Graph", "graphs"),
+    ("Graph Theory", "graphs"),
     ("Backtracking", "backtracking"),
     ("Heap (Priority Queue)", "heap-priority-queue"),
     ("Linked List", "linked-list"),
@@ -89,8 +101,10 @@ TAG_DIRS = [
     ("Stack", "stack"),
     ("Sliding Window", "sliding-window"),
     ("Two Pointers", "two-pointers"),
-    ("Binary Search", "binary-search"),
+    # Before Binary Search on purpose: Longest Increasing Subsequence carries
+    # both, and it is a DP problem that happens to have a binary-search speedup.
     ("Dynamic Programming", "dp-1d"),
+    ("Binary Search", "binary-search"),
     ("Greedy", "greedy"),
     ("Bit Manipulation", "bit-manipulation"),
     ("Geometry", "math-geometry"),

@@ -49,6 +49,12 @@
   "Array",
   "Sliding Window"
  ],
+ "number-of-provinces": [
+  "Depth-First Search",
+  "Breadth-First Search",
+  "Union-Find",
+  "Graph Theory"
+ ],
  "ransom-note": [
   "Hash Table",
   "String",
