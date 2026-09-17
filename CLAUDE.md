@@ -24,24 +24,42 @@ if the reasoning next to it is intact.
 | `tries.py` | `TrieNode`/`Trie` + wildcard search |
 | `sliding_window.py` | Fixed + variable window blocks, and opposite-end two pointers |
 | `main.py` | Scratch pad for whatever LeetCode problem is being solved right now. Overwritten per problem — do not treat its contents as durable. |
+| `leetcode_pull.py` | **The capture pipeline.** Fetches accepted submissions from LeetCode's API, writes them into the topic layout and commits each one. Needs a session cookie. Not study material — do not apply the file-style rules below to it. |
+| `leetcode_topics.py` | The one place that decides which topic folder a problem belongs in, imported by both other scripts. Also performs the migration (`--plan` / `--migrate`). Not study material. |
 | `leetcode_sync.py` | Reads the solutions repo (directories + git history) and writes the two generated files. Stdlib only, offline, no credentials. Not study material — do not apply the file-style rules below to it. |
 | `LEETCODE.md` | **Generated** by `leetcode_sync.py`. What the user has actually solved, mapped onto the blocks below. Read it before recommending practice problems. Never hand-edit. |
 | `leetcode_data.json` | **Generated.** The derived record behind `LEETCODE.md` — one entry per problem plus its solve dates. |
-| `neetcode_lists.json` | **Generated**, then committed. NeetCode's own problem table (450 problems, `blind75`/`neetcode150` flags). The only thing ever fetched from the network; cached so runs work offline. Refresh with `--refresh-lists`. |
+| `neetcode_lists.json` | **Generated**, then committed. NeetCode's own problem table (450 problems, `blind75`/`neetcode150` flags) — also the topic taxonomy. Cached so runs work offline. Refresh with `--refresh-lists`. |
+| `leetcode_tags.json` | **Generated**, then committed. LeetCode's topic tags for problems NeetCode never listed, so they can still be filed. Written on demand by `leetcode_topics.py`. |
+| `.leetcode_session` | The LeetCode session cookie for `leetcode_pull.py`. **Gitignored — never commit it, never print its contents.** |
+| `<topic>/<id>-<slug>/` | One directory per solved problem: LeetCode's `README.md`, the accepted solution, and `submissions.json`. |
 
 ## The solutions repo
 
-Accepted solutions live in a **separate git repo**, `../leetcode-problems`, one directory
-per problem named `<id>-<slug>/` containing the LeetCode `README.md` and a `<slug>.py`.
-It is written by **LeetSync**, a browser extension that commits on every accepted
-submission — so it is machine-managed. Never hand-edit or reorganise it; a rename breaks
-the mapping back to LeetCode, and the extension will fight you.
+Solutions and study files now live in **this one repo**, filed by topic:
 
-That auto-committing is what makes the review system work: **commit dates in that repo
-are real solve dates**, and a re-solve is a new commit, so solve counts and recency are
-computed rather than logged. The study files in this repo are being migrated into that
-one; `leetcode_sync.py` auto-detects the solutions repo either alongside (`../`) or as
-its own directory, so it keeps working before and after the move.
+    graphs/207-course-schedule/{README.md, course-schedule.py, submissions.json}
+
+The topic folders are NeetCode's pattern names (`arrays-hashing`, `linked-list`,
+`dp-1d`, …). The `<id>-<slug>` directory name is the whole mapping back to LeetCode, so
+**rename the topic folder freely but never the problem directory**.
+
+It used to be written by **LeetSync**, a browser extension. It is now written by
+`leetcode_pull.py`, which asks LeetCode directly — see *Capturing submissions* below.
+
+Commit dates are what make the review system work: **a commit date is a real solve
+date**, and every acceptance is a new commit, so solve counts and recency are computed
+rather than logged. Two consequences worth knowing before touching git here:
+
+- `leetcode_pull.py` authors each commit at the **submission timestamp**, not at "now",
+  so backfilled submissions land on their real dates.
+- `leetcode_sync.py` counts only Adds and Modifies (`--diff-filter=AM`). Moving a problem
+  directory is a rename, which is therefore invisible to the solve log. Without that
+  filter, one reorganising commit would read as re-solving every problem it touched.
+
+To re-file problems after changing the taxonomy, use `python3 leetcode_topics.py --plan`
+and then `--migrate`; it uses `git mv`, so history survives. Do not move directories by
+hand.
 
 ## Knowing what the user has solved
 
@@ -50,10 +68,10 @@ with `python3 leetcode_sync.py` — it reads the solutions repo and nothing else
 needs no cookie, no API and no network, and it cannot go stale in a way a re-run will not
 fix. Just re-run it rather than reasoning about whether it is current.
 
-**It knows only what LeetSync committed.** A problem solved while the extension was not
-running does not exist as far as this repo is concerned, and will be reported as unsolved.
-That is a deliberate trade — no credential to keep alive — and the fix is to re-solve it,
-which writes the commit. Do not try to patch around it by hand.
+**It knows only what has been committed.** A problem solved but never pulled does not
+exist as far as this repo is concerned, and will be reported as unsolved. The fix is to
+run `python3 leetcode_pull.py` — and if it is further back than the last ~20 acceptances,
+`python3 leetcode_pull.py --backfill 500`. Do not patch around it by hand.
 
 Three sections matter, and they answer different questions:
 
@@ -86,6 +104,33 @@ but not Subsets, which is the base template Word Search is a twist on.
 
 Note there is no published `neetcode250` flag in NeetCode's data, so tier 3 is their full
 450 set rather than the 250. Say "NeetCode All (450)", not "NeetCode 250".
+
+## Capturing submissions
+
+`leetcode_pull.py` replaces LeetSync. It reads accepted submissions from LeetCode's API
+and commits them, so nothing has to be listening at the moment of submission:
+
+```bash
+python3 leetcode_pull.py                # pull recent acceptances and commit each
+python3 leetcode_pull.py --dry-run      # show what it would do, write nothing
+python3 leetcode_pull.py --watch 120    # poll every 2 minutes while practising
+python3 leetcode_pull.py --backfill 500 # walk further back through history
+python3 leetcode_pull.py --push --sync  # push, then regenerate LEETCODE.md
+```
+
+It is **idempotent and stateless** — the repo is the only record of what has been pulled,
+so a failed run or a sleeping laptop costs nothing and the next run catches up. Re-running
+it is always safe; prefer that to reasoning about whether it ran.
+
+Each acceptance also appends to the problem's `submissions.json`. That file is load-
+bearing: re-solving with byte-identical code produces no diff, so git would have nothing
+to commit and the review ladder would never advance.
+
+It needs a session cookie in `.leetcode_session` (gitignored), which expires every few
+weeks. **Every failure mode reports itself as an expired cookie** — if the script says the
+cookie is not signed in, or that no code came back for a submission, the fix is to paste a
+fresh `LEETCODE_SESSION` from DevTools → Application → Cookies. That is the one piece of
+maintenance this design costs, and the trade for not depending on a browser extension.
 
 ## Active recall
 
