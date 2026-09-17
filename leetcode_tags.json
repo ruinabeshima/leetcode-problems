@@ -1,0 +1,61 @@
+{
+ "backspace-string-compare": [
+  "Two Pointers",
+  "String",
+  "Stack",
+  "Simulation"
+ ],
+ "fibonacci-number": [
+  "Math",
+  "Dynamic Programming",
+  "Recursion",
+  "Memoization"
+ ],
+ "find-smallest-letter-greater-than-target": [
+  "Array",
+  "Binary Search"
+ ],
+ "find-the-difference": [
+  "Hash Table",
+  "String",
+  "Bit Manipulation",
+  "Sorting"
+ ],
+ "first-unique-character-in-a-string": [
+  "Hash Table",
+  "String",
+  "Queue",
+  "Counting"
+ ],
+ "grumpy-bookstore-owner": [
+  "Array",
+  "Sliding Window"
+ ],
+ "intersection-of-two-arrays": [
+  "Array",
+  "Hash Table",
+  "Two Pointers",
+  "Binary Search",
+  "Sorting"
+ ],
+ "intersection-of-two-arrays-ii": [
+  "Array",
+  "Hash Table",
+  "Two Pointers",
+  "Binary Search",
+  "Sorting"
+ ],
+ "maximum-average-subarray-i": [
+  "Array",
+  "Sliding Window"
+ ],
+ "ransom-note": [
+  "Hash Table",
+  "String",
+  "Counting"
+ ],
+ "running-sum-of-1d-array": [
+  "Array",
+  "Prefix Sum"
+ ]
+}

@@ -40,6 +40,8 @@ import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import leetcode_topics as topics
+
 # LeetSync's directory naming. The id and slug are the whole mapping back to
 # LeetCode, which is why the repo must never be hand-reorganised.
 PROBLEM_DIR_RE = re.compile(r"^(\d+)-(.+)$")
@@ -146,8 +148,9 @@ def find_problems_dir(start, explicit=None):
         return path if path.is_dir() else None
     here = Path(start).resolve()
     for cand in (here, here.parent / "leetcode-problems"):
-        if cand.is_dir() and any(PROBLEM_DIR_RE.match(c.name)
-                                 for c in cand.iterdir() if c.is_dir()):
+        # Not a listdir: after the topic migration the problem directories sit
+        # one level down, under graphs/, trees/ and so on.
+        if cand.is_dir() and topics.find_problem_dirs(cand):
             return cand
     return None
 
@@ -155,13 +158,13 @@ def find_problems_dir(start, explicit=None):
 def scan_problems(problems_dir):
     """One record per problem directory, title and difficulty out of its README."""
     found = []
-    for name in sorted(os.listdir(problems_dir)):
-        match = PROBLEM_DIR_RE.match(name)
-        if not match or not (problems_dir / name).is_dir():
-            continue
-        pid, slug = int(match.group(1)), match.group(2)
+    for slug, rel in sorted(topics.find_problem_dirs(problems_dir).items()):
+        name = Path(rel).name
+        pid = int(PROBLEM_DIR_RE.match(name).group(1))
+        parent = Path(rel).parent
+        topic = "" if parent == Path(".") else parent.as_posix()
         title, difficulty = slug, ""
-        readme = problems_dir / name / "README.md"
+        readme = Path(problems_dir) / rel / "README.md"
         if readme.exists():
             text = readme.read_text(encoding="utf-8", errors="replace")
             found_title = TITLE_RE.search(text)
@@ -171,8 +174,23 @@ def scan_problems(problems_dir):
             if found_diff:
                 difficulty = found_diff.group(1)
         found.append({"id": pid, "slug": slug, "title": title,
-                      "difficulty": difficulty, "dir": name})
+                      "difficulty": difficulty, "dir": rel, "topic": topic})
     return sorted(found, key=lambda p: p["id"])
+
+
+def slug_from_path(path):
+    """The problem slug out of a repo-relative path, flat or nested.
+
+    Paths read "207-course-schedule/x.py" before the topic migration and
+    "graphs/207-course-schedule/x.py" after it -- and commits made before the
+    move keep their old paths forever, so scan the segments for the one that
+    looks like a problem rather than assuming which position it is in.
+    """
+    for segment in path.split("/"):
+        match = PROBLEM_DIR_RE.match(segment)
+        if match:
+            return match.group(2)
+    return None
 
 
 def solve_history(problems_dir):
@@ -184,7 +202,12 @@ def solve_history(problems_dir):
     """
     try:
         proc = subprocess.run(
-            ["git", "log", "--format=@%at", "--name-only", "--no-merges"],
+            # --diff-filter=AM is load-bearing: moving the problem directories
+            # into topic folders is a rename, and without this filter every
+            # moved problem would read as having been re-solved on the day of
+            # the move, resetting 75 review schedules at once.
+            ["git", "log", "--format=@%at", "--name-only", "--no-merges",
+             "--diff-filter=AM"],
             cwd=str(problems_dir), capture_output=True, text=True, timeout=120,
         )
     except (OSError, subprocess.SubprocessError):
@@ -197,10 +220,12 @@ def solve_history(problems_dir):
         if line.startswith("@"):
             when = datetime.fromtimestamp(int(line[1:]), timezone.utc).date()
         elif line.strip() and when is not None:
-            match = PROBLEM_DIR_RE.match(line.split("/", 1)[0])
             # Only the solution file marks a solve; the README commit is noise.
-            if match and not line.endswith(".md"):
-                history.setdefault(match.group(2), set()).add(when)
+            if line.endswith(".md"):
+                continue
+            slug = slug_from_path(line)
+            if slug:
+                history.setdefault(slug, set()).add(when)
     return {slug: sorted(dates, reverse=True) for slug, dates in history.items()}
 
 
