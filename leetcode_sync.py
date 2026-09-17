@@ -74,7 +74,7 @@ REVIEW_SHOWN = 15  # rows in the markdown table; the rest are counted, not liste
 # is what turns "you solved 40 graph problems" into "you have never done
 # Kahn's". Edit freely -- it is a study list, not data from anywhere.
 CANON = {
-    "graphs.py": {
+    "blocks/graphs.py": {
         "BFS with levels": ["binary-tree-level-order-traversal", "word-ladder"],
         "multi-source BFS (twist)": ["rotting-oranges", "01-matrix"],
         "DFS on a grid": ["number-of-islands", "max-area-of-island"],
@@ -86,7 +86,7 @@ CANON = {
         "bipartite colouring (twist)": ["is-graph-bipartite"],
         "0-1 BFS (twist)": ["minimum-obstacle-removal-to-reach-corner"],
     },
-    "trees.py": {
+    "blocks/trees.py": {
         "bottom-up DFS": ["maximum-depth-of-binary-tree", "diameter-of-binary-tree",
                           "balanced-binary-tree", "binary-tree-maximum-path-sum"],
         "top-down DFS": ["path-sum", "path-sum-ii", "sum-root-to-leaf-numbers"],
@@ -95,19 +95,19 @@ CANON = {
         "LCA": ["lowest-common-ancestor-of-a-binary-tree",
                 "lowest-common-ancestor-of-a-binary-search-tree"],
     },
-    "linked_lists.py": {
+    "blocks/linked_lists.py": {
         "dummy head": ["remove-linked-list-elements", "remove-nth-node-from-end-of-list"],
         "reverse": ["reverse-linked-list", "reverse-linked-list-ii"],
         "fast & slow": ["linked-list-cycle", "linked-list-cycle-ii", "middle-of-the-linked-list"],
         "merge two sorted": ["merge-two-sorted-lists"],
         "split-reverse-merge": ["reorder-list", "palindrome-linked-list"],
     },
-    "heaps.py": {
+    "blocks/heaps.py": {
         "top-K with a size-k heap": ["kth-largest-element-in-an-array", "top-k-frequent-elements",
                                      "k-closest-points-to-origin", "merge-k-sorted-lists"],
         "two-heap median": ["find-median-from-data-stream"],
     },
-    "backtracking.py": {
+    "blocks/backtracking.py": {
         "choose/explore/undo": ["subsets", "permutations", "combination-sum",
                                 "letter-combinations-of-a-phone-number"],
         "dedup on a sorted array (twist)": ["subsets-ii", "combination-sum-ii", "permutations-ii"],
@@ -115,12 +115,12 @@ CANON = {
         "up-front pruning (twist)": ["n-queens"],
         "partition (twist)": ["palindrome-partitioning"],
     },
-    "tries.py": {
+    "blocks/tries.py": {
         "children dict + is_word": ["implement-trie-prefix-tree"],
         "wildcard search (twist)": ["design-add-and-search-words-data-structure"],
         "trie + grid backtracking (twist)": ["word-search-ii"],
     },
-    "sliding_window.py": {
+    "blocks/sliding_window.py": {
         "longest (shrink while invalid)": ["longest-substring-without-repeating-characters",
                                            "longest-repeating-character-replacement",
                                            "max-consecutive-ones-iii"],

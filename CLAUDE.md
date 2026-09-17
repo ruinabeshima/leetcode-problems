@@ -16,13 +16,14 @@ if the reasoning next to it is intact.
 
 | File | Contents |
 |---|---|
-| `graphs.py` | The 5 graph blocks + plain BFS/DFS |
-| `trees.py` | 3 core tree blocks + BST and LCA, with a `TreeNode` class |
-| `linked_lists.py` | 5 linked-list blocks, with `ListNode` and `build`/`to_list` helpers |
-| `heaps.py` | The top-K block, `heapq` basics, and the two-heap median |
-| `backtracking.py` | The choose/explore/undo template + subsets, permutations, grid search, pruning |
-| `tries.py` | `TrieNode`/`Trie` + wildcard search |
-| `sliding_window.py` | Fixed + variable window blocks, and opposite-end two pointers |
+| `blocks/` | The memorised code blocks — the study material. Everything below under *The organising framework* lives here. |
+| `blocks/graphs.py` | The 5 graph blocks + plain BFS/DFS |
+| `blocks/trees.py` | 3 core tree blocks + BST and LCA, with a `TreeNode` class |
+| `blocks/linked_lists.py` | 5 linked-list blocks, with `ListNode` and `build`/`to_list` helpers |
+| `blocks/heaps.py` | The top-K block, `heapq` basics, and the two-heap median |
+| `blocks/backtracking.py` | The choose/explore/undo template + subsets, permutations, grid search, pruning |
+| `blocks/tries.py` | `TrieNode`/`Trie` + wildcard search |
+| `blocks/sliding_window.py` | Fixed + variable window blocks, and opposite-end two pointers |
 | `main.py` | Scratch pad for whatever LeetCode problem is being solved right now. Overwritten per problem — do not treat its contents as durable. |
 | `leetcode_pull.py` | **The capture pipeline.** Fetches accepted submissions from LeetCode's API, writes them into the topic layout and commits each one. Needs a session cookie. Not study material — do not apply the file-style rules below to it. |
 | `leetcode_topics.py` | The one place that decides which topic folder a problem belongs in, imported by both other scripts. Also performs the migration (`--plan` / `--migrate`). Not study material. |
@@ -154,29 +155,28 @@ creates the new commit. Retyping it locally does not advance the ladder.
 
 ## Running things
 
-No test runner. Verify by importing the module and calling it, from the directory
-holding this file:
+No test runner. Verify by importing the block and calling it, from the repo root:
 
 ```bash
-python3 -c "from graphs import DSU; d = DSU(6); d.union(0,1); print(d.parent, d.count)"
+python3 -c "from blocks.graphs import DSU; d = DSU(6); d.union(0,1); print(d.parent, d.count)"
 ```
 
-From a script elsewhere, put that directory on the import path:
+`blocks/` is an implicit namespace package — there is no `__init__.py` and none is
+needed. From a script elsewhere, put the repo root (not `blocks/`) on the import path:
 
 ```bash
 PYTHONPATH=/path/to/this/repo python3 /path/to/scratch_test.py
 ```
 
-Paths here are deliberately relative — these files are moving into the solutions repo,
-so anything that hardcodes their current location will rot.
+Paths here are deliberately relative, so anything that hardcodes their location will rot.
 
-`trees.py` and `linked_lists.py` ship constructors for test data — `build([1,2,3])` /
-`to_list(head)` for lists, and `TreeNode(val, left, right)` for trees.
+`blocks/trees.py` and `blocks/linked_lists.py` ship constructors for test data —
+`build([1,2,3])` / `to_list(head)` for lists, and `TreeNode(val, left, right)` for trees.
 
 ## The organising framework
 
-The three files share one idea, and it is the thing to understand before changing
-anything: there is a small set of **memorised code blocks**, and everything else is a
+The files in `blocks/` share one idea, and it is the thing to understand before
+changing anything: there is a small set of **memorised code blocks**, and everything else is a
 named **twist** on one of them. This is deliberate — the user asked for the material to
 be reduced to a minimum memorisation load.
 
@@ -187,7 +187,7 @@ one-line changes to those five, never as separate algorithms.
 
 **Trees — 3 core + 2:** bottom-up DFS · top-down DFS · level-order BFS, plus BST
 ordering and LCA. Level-order BFS is explicitly the same code as `bfs_with_levels` in
-`graphs.py`.
+`blocks/graphs.py`.
 
 **Linked lists — 5 blocks:** dummy head · reverse · fast & slow · merge two sorted ·
 split-reverse-merge.
@@ -199,7 +199,7 @@ max-heaps come from negating. The Dijkstra priority queue is the same structure.
 **Backtracking — 1 template:** choose · explore · undo. Subsets, permutations,
 combination sum, grid word search and N-Queens are that template with a different notion
 of "choice" — plus, for N-Queens, up-front pruning. `all_root_to_leaf_paths` in
-`trees.py` is the same idea and is cross-referenced from there.
+`blocks/trees.py` is the same idea and is cross-referenced from there.
 
 **Tries — 1 block:** `children` dict + `is_word` flag. Wildcard search is the same walk
 turned recursive.
