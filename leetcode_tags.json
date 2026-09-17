@@ -5,6 +5,11 @@
   "Stack",
   "Simulation"
  ],
+ "binary-tree-level-order-traversal": [
+  "Tree",
+  "Breadth-First Search",
+  "Binary Tree"
+ ],
  "fibonacci-number": [
   "Math",
   "Dynamic Programming",
