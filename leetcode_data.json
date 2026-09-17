@@ -1,0 +1,797 @@
+{
+  "generated_at": "2026-09-17 04:59 UTC",
+  "problems_dir": "/Users/wota/Desktop/leetcode-problems",
+  "problems": [
+    {
+      "id": 1,
+      "slug": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "dir": "1-two-sum"
+    },
+    {
+      "id": 2,
+      "slug": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "dir": "2-add-two-numbers"
+    },
+    {
+      "id": 3,
+      "slug": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "dir": "3-longest-substring-without-repeating-characters"
+    },
+    {
+      "id": 5,
+      "slug": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "dir": "5-longest-palindromic-substring"
+    },
+    {
+      "id": 11,
+      "slug": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "dir": "11-container-with-most-water"
+    },
+    {
+      "id": 15,
+      "slug": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "dir": "15-3sum"
+    },
+    {
+      "id": 19,
+      "slug": "remove-nth-node-from-end-of-list",
+      "title": "Remove Nth Node From End of List",
+      "difficulty": "Medium",
+      "dir": "19-remove-nth-node-from-end-of-list"
+    },
+    {
+      "id": 20,
+      "slug": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "dir": "20-valid-parentheses"
+    },
+    {
+      "id": 21,
+      "slug": "merge-two-sorted-lists",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "dir": "21-merge-two-sorted-lists"
+    },
+    {
+      "id": 26,
+      "slug": "remove-duplicates-from-sorted-array",
+      "title": "Remove Duplicates from Sorted Array",
+      "difficulty": "Easy",
+      "dir": "26-remove-duplicates-from-sorted-array"
+    },
+    {
+      "id": 27,
+      "slug": "remove-element",
+      "title": "Remove Element",
+      "difficulty": "Easy",
+      "dir": "27-remove-element"
+    },
+    {
+      "id": 36,
+      "slug": "valid-sudoku",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "dir": "36-valid-sudoku"
+    },
+    {
+      "id": 42,
+      "slug": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "dir": "42-trapping-rain-water"
+    },
+    {
+      "id": 49,
+      "slug": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "dir": "49-group-anagrams"
+    },
+    {
+      "id": 70,
+      "slug": "climbing-stairs",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "dir": "70-climbing-stairs"
+    },
+    {
+      "id": 74,
+      "slug": "search-a-2d-matrix",
+      "title": "Search a 2D Matrix",
+      "difficulty": "Medium",
+      "dir": "74-search-a-2d-matrix"
+    },
+    {
+      "id": 83,
+      "slug": "remove-duplicates-from-sorted-list",
+      "title": "Remove Duplicates from Sorted List",
+      "difficulty": "Easy",
+      "dir": "83-remove-duplicates-from-sorted-list"
+    },
+    {
+      "id": 88,
+      "slug": "merge-sorted-array",
+      "title": "Merge Sorted Array",
+      "difficulty": "Easy",
+      "dir": "88-merge-sorted-array"
+    },
+    {
+      "id": 100,
+      "slug": "same-tree",
+      "title": "Same Tree",
+      "difficulty": "Easy",
+      "dir": "100-same-tree"
+    },
+    {
+      "id": 104,
+      "slug": "maximum-depth-of-binary-tree",
+      "title": "Maximum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "dir": "104-maximum-depth-of-binary-tree"
+    },
+    {
+      "id": 121,
+      "slug": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "dir": "121-best-time-to-buy-and-sell-stock"
+    },
+    {
+      "id": 125,
+      "slug": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "dir": "125-valid-palindrome"
+    },
+    {
+      "id": 128,
+      "slug": "longest-consecutive-sequence",
+      "title": "Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "dir": "128-longest-consecutive-sequence"
+    },
+    {
+      "id": 133,
+      "slug": "clone-graph",
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "dir": "133-clone-graph"
+    },
+    {
+      "id": 138,
+      "slug": "copy-list-with-random-pointer",
+      "title": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "dir": "138-copy-list-with-random-pointer"
+    },
+    {
+      "id": 141,
+      "slug": "linked-list-cycle",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "dir": "141-linked-list-cycle"
+    },
+    {
+      "id": 143,
+      "slug": "reorder-list",
+      "title": "Reorder List",
+      "difficulty": "Medium",
+      "dir": "143-reorder-list"
+    },
+    {
+      "id": 146,
+      "slug": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "dir": "146-lru-cache"
+    },
+    {
+      "id": 153,
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "dir": "153-find-minimum-in-rotated-sorted-array"
+    },
+    {
+      "id": 167,
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "difficulty": "Medium",
+      "dir": "167-two-sum-ii-input-array-is-sorted"
+    },
+    {
+      "id": 169,
+      "slug": "majority-element",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "dir": "169-majority-element"
+    },
+    {
+      "id": 198,
+      "slug": "house-robber",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "dir": "198-house-robber"
+    },
+    {
+      "id": 200,
+      "slug": "number-of-islands",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "dir": "200-number-of-islands"
+    },
+    {
+      "id": 202,
+      "slug": "happy-number",
+      "title": "Happy Number",
+      "difficulty": "Easy",
+      "dir": "202-happy-number"
+    },
+    {
+      "id": 203,
+      "slug": "remove-linked-list-elements",
+      "title": "Remove Linked List Elements",
+      "difficulty": "Easy",
+      "dir": "203-remove-linked-list-elements"
+    },
+    {
+      "id": 206,
+      "slug": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "dir": "206-reverse-linked-list"
+    },
+    {
+      "id": 207,
+      "slug": "course-schedule",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "dir": "207-course-schedule"
+    },
+    {
+      "id": 213,
+      "slug": "house-robber-ii",
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "dir": "213-house-robber-ii"
+    },
+    {
+      "id": 217,
+      "slug": "contains-duplicate",
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "dir": "217-contains-duplicate"
+    },
+    {
+      "id": 219,
+      "slug": "contains-duplicate-ii",
+      "title": "Contains Duplicate II",
+      "difficulty": "Easy",
+      "dir": "219-contains-duplicate-ii"
+    },
+    {
+      "id": 226,
+      "slug": "invert-binary-tree",
+      "title": "Invert Binary Tree",
+      "difficulty": "Easy",
+      "dir": "226-invert-binary-tree"
+    },
+    {
+      "id": 234,
+      "slug": "palindrome-linked-list",
+      "title": "Palindrome Linked List",
+      "difficulty": "Easy",
+      "dir": "234-palindrome-linked-list"
+    },
+    {
+      "id": 238,
+      "slug": "product-of-array-except-self",
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "dir": "238-product-of-array-except-self"
+    },
+    {
+      "id": 242,
+      "slug": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "dir": "242-valid-anagram"
+    },
+    {
+      "id": 268,
+      "slug": "missing-number",
+      "title": "Missing Number",
+      "difficulty": "Easy",
+      "dir": "268-missing-number"
+    },
+    {
+      "id": 283,
+      "slug": "move-zeroes",
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "dir": "283-move-zeroes"
+    },
+    {
+      "id": 287,
+      "slug": "find-the-duplicate-number",
+      "title": "Find the Duplicate Number",
+      "difficulty": "Medium",
+      "dir": "287-find-the-duplicate-number"
+    },
+    {
+      "id": 344,
+      "slug": "reverse-string",
+      "title": "Reverse String",
+      "difficulty": "Easy",
+      "dir": "344-reverse-string"
+    },
+    {
+      "id": 347,
+      "slug": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "dir": "347-top-k-frequent-elements"
+    },
+    {
+      "id": 349,
+      "slug": "intersection-of-two-arrays",
+      "title": "Intersection of Two Arrays",
+      "difficulty": "Easy",
+      "dir": "349-intersection-of-two-arrays"
+    },
+    {
+      "id": 350,
+      "slug": "intersection-of-two-arrays-ii",
+      "title": "Intersection of Two Arrays II",
+      "difficulty": "Easy",
+      "dir": "350-intersection-of-two-arrays-ii"
+    },
+    {
+      "id": 383,
+      "slug": "ransom-note",
+      "title": "Ransom Note",
+      "difficulty": "Easy",
+      "dir": "383-ransom-note"
+    },
+    {
+      "id": 387,
+      "slug": "first-unique-character-in-a-string",
+      "title": "First Unique Character in a String",
+      "difficulty": "Easy",
+      "dir": "387-first-unique-character-in-a-string"
+    },
+    {
+      "id": 389,
+      "slug": "find-the-difference",
+      "title": "Find the Difference",
+      "difficulty": "Easy",
+      "dir": "389-find-the-difference"
+    },
+    {
+      "id": 392,
+      "slug": "is-subsequence",
+      "title": "Is Subsequence",
+      "difficulty": "Easy",
+      "dir": "392-is-subsequence"
+    },
+    {
+      "id": 417,
+      "slug": "pacific-atlantic-water-flow",
+      "title": "Pacific Atlantic Water Flow",
+      "difficulty": "Medium",
+      "dir": "417-pacific-atlantic-water-flow"
+    },
+    {
+      "id": 448,
+      "slug": "find-all-numbers-disappeared-in-an-array",
+      "title": "Find All Numbers Disappeared in an Array",
+      "difficulty": "Easy",
+      "dir": "448-find-all-numbers-disappeared-in-an-array"
+    },
+    {
+      "id": 572,
+      "slug": "subtree-of-another-tree",
+      "title": "Subtree of Another Tree",
+      "difficulty": "Easy",
+      "dir": "572-subtree-of-another-tree"
+    },
+    {
+      "id": 643,
+      "slug": "maximum-average-subarray-i",
+      "title": "Maximum Average Subarray I",
+      "difficulty": "Easy",
+      "dir": "643-maximum-average-subarray-i"
+    },
+    {
+      "id": 647,
+      "slug": "palindromic-substrings",
+      "title": "Palindromic Substrings",
+      "difficulty": "Medium",
+      "dir": "647-palindromic-substrings"
+    },
+    {
+      "id": 680,
+      "slug": "valid-palindrome-ii",
+      "title": "Valid Palindrome II",
+      "difficulty": "Easy",
+      "dir": "680-valid-palindrome-ii"
+    },
+    {
+      "id": 682,
+      "slug": "baseball-game",
+      "title": "Baseball Game",
+      "difficulty": "Easy",
+      "dir": "682-baseball-game"
+    },
+    {
+      "id": 695,
+      "slug": "max-area-of-island",
+      "title": "Max Area of Island",
+      "difficulty": "Medium",
+      "dir": "695-max-area-of-island"
+    },
+    {
+      "id": 745,
+      "slug": "find-smallest-letter-greater-than-target",
+      "title": "Find Smallest Letter Greater Than Target",
+      "difficulty": "Easy",
+      "dir": "745-find-smallest-letter-greater-than-target"
+    },
+    {
+      "id": 792,
+      "slug": "binary-search",
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "dir": "792-binary-search"
+    },
+    {
+      "id": 874,
+      "slug": "backspace-string-compare",
+      "title": "Backspace String Compare",
+      "difficulty": "Easy",
+      "dir": "874-backspace-string-compare"
+    },
+    {
+      "id": 908,
+      "slug": "middle-of-the-linked-list",
+      "title": "Middle of the Linked List",
+      "difficulty": "Easy",
+      "dir": "908-middle-of-the-linked-list"
+    },
+    {
+      "id": 1013,
+      "slug": "fibonacci-number",
+      "title": "Fibonacci Number",
+      "difficulty": "Easy",
+      "dir": "1013-fibonacci-number"
+    },
+    {
+      "id": 1019,
+      "slug": "squares-of-a-sorted-array",
+      "title": "Squares of a Sorted Array",
+      "difficulty": "Easy",
+      "dir": "1019-squares-of-a-sorted-array"
+    },
+    {
+      "id": 1036,
+      "slug": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "dir": "1036-rotting-oranges"
+    },
+    {
+      "id": 1138,
+      "slug": "grumpy-bookstore-owner",
+      "title": "Grumpy Bookstore Owner",
+      "difficulty": "Medium",
+      "dir": "1138-grumpy-bookstore-owner"
+    },
+    {
+      "id": 1445,
+      "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+      "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+      "difficulty": "Medium",
+      "dir": "1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold"
+    },
+    {
+      "id": 1603,
+      "slug": "running-sum-of-1d-array",
+      "title": "Running Sum of 1d Array",
+      "difficulty": "Easy",
+      "dir": "1603-running-sum-of-1d-array"
+    },
+    {
+      "id": 1894,
+      "slug": "merge-strings-alternately",
+      "title": "Merge Strings Alternately",
+      "difficulty": "Easy",
+      "dir": "1894-merge-strings-alternately"
+    },
+    {
+      "id": 2058,
+      "slug": "concatenation-of-array",
+      "title": "Concatenation of Array",
+      "difficulty": "Easy",
+      "dir": "2058-concatenation-of-array"
+    }
+  ],
+  "history": {
+    "course-schedule": [
+      "2026-09-17",
+      "2026-09-12"
+    ],
+    "subtree-of-another-tree": [
+      "2026-09-16"
+    ],
+    "same-tree": [
+      "2026-09-16"
+    ],
+    "maximum-depth-of-binary-tree": [
+      "2026-09-16",
+      "2026-05-14"
+    ],
+    "invert-binary-tree": [
+      "2026-09-16"
+    ],
+    "rotting-oranges": [
+      "2026-09-12"
+    ],
+    "max-area-of-island": [
+      "2026-09-12"
+    ],
+    "number-of-islands": [
+      "2026-09-12",
+      "2026-08-29",
+      "2026-08-22",
+      "2026-08-20",
+      "2026-08-19"
+    ],
+    "find-minimum-in-rotated-sorted-array": [
+      "2026-09-10",
+      "2026-09-05"
+    ],
+    "valid-parentheses": [
+      "2026-09-10"
+    ],
+    "container-with-most-water": [
+      "2026-09-02",
+      "2026-06-10"
+    ],
+    "palindromic-substrings": [
+      "2026-09-02"
+    ],
+    "clone-graph": [
+      "2026-09-02",
+      "2026-08-29"
+    ],
+    "longest-palindromic-substring": [
+      "2026-09-01"
+    ],
+    "longest-substring-without-repeating-characters": [
+      "2026-09-01",
+      "2026-05-04",
+      "2026-05-03"
+    ],
+    "pacific-atlantic-water-flow": [
+      "2026-08-22"
+    ],
+    "house-robber-ii": [
+      "2026-08-22"
+    ],
+    "house-robber": [
+      "2026-08-22"
+    ],
+    "climbing-stairs": [
+      "2026-08-22"
+    ],
+    "fibonacci-number": [
+      "2026-08-22"
+    ],
+    "lru-cache": [
+      "2026-07-03"
+    ],
+    "copy-list-with-random-pointer": [
+      "2026-07-02"
+    ],
+    "find-the-duplicate-number": [
+      "2026-07-02"
+    ],
+    "add-two-numbers": [
+      "2026-07-02"
+    ],
+    "reverse-linked-list": [
+      "2026-07-02",
+      "2026-07-01",
+      "2026-06-25",
+      "2026-05-05"
+    ],
+    "remove-nth-node-from-end-of-list": [
+      "2026-07-01"
+    ],
+    "reorder-list": [
+      "2026-07-01"
+    ],
+    "merge-two-sorted-lists": [
+      "2026-07-01",
+      "2026-05-22"
+    ],
+    "search-a-2d-matrix": [
+      "2026-06-29"
+    ],
+    "binary-search": [
+      "2026-06-29",
+      "2026-05-22",
+      "2026-05-11"
+    ],
+    "group-anagrams": [
+      "2026-06-29",
+      "2026-06-08"
+    ],
+    "two-sum": [
+      "2026-06-29",
+      "2026-05-20",
+      "2026-04-19"
+    ],
+    "valid-anagram": [
+      "2026-06-29",
+      "2026-05-20",
+      "2026-04-26",
+      "2026-04-19"
+    ],
+    "missing-number": [
+      "2026-06-29",
+      "2026-04-19"
+    ],
+    "contains-duplicate": [
+      "2026-06-29",
+      "2026-06-04",
+      "2026-05-20",
+      "2026-04-26",
+      "2026-04-19"
+    ],
+    "best-time-to-buy-and-sell-stock": [
+      "2026-06-11",
+      "2026-05-23",
+      "2026-04-19"
+    ],
+    "trapping-rain-water": [
+      "2026-06-11"
+    ],
+    "3sum": [
+      "2026-06-11"
+    ],
+    "two-sum-ii-input-array-is-sorted": [
+      "2026-06-10",
+      "2026-05-20",
+      "2026-05-01"
+    ],
+    "valid-palindrome": [
+      "2026-06-10",
+      "2026-05-21",
+      "2026-04-28"
+    ],
+    "longest-consecutive-sequence": [
+      "2026-06-09"
+    ],
+    "valid-sudoku": [
+      "2026-06-09"
+    ],
+    "product-of-array-except-self": [
+      "2026-06-08"
+    ],
+    "top-k-frequent-elements": [
+      "2026-06-08"
+    ],
+    "baseball-game": [
+      "2026-05-23"
+    ],
+    "merge-strings-alternately": [
+      "2026-05-23"
+    ],
+    "contains-duplicate-ii": [
+      "2026-05-22",
+      "2026-05-21"
+    ],
+    "valid-palindrome-ii": [
+      "2026-05-21"
+    ],
+    "reverse-string": [
+      "2026-05-20"
+    ],
+    "concatenation-of-array": [
+      "2026-05-20"
+    ],
+    "remove-duplicates-from-sorted-array": [
+      "2026-05-20",
+      "2026-05-01",
+      "2026-04-30"
+    ],
+    "find-smallest-letter-greater-than-target": [
+      "2026-05-11"
+    ],
+    "palindrome-linked-list": [
+      "2026-05-09"
+    ],
+    "remove-duplicates-from-sorted-list": [
+      "2026-05-09"
+    ],
+    "remove-linked-list-elements": [
+      "2026-05-09"
+    ],
+    "middle-of-the-linked-list": [
+      "2026-05-08"
+    ],
+    "linked-list-cycle": [
+      "2026-05-08"
+    ],
+    "grumpy-bookstore-owner": [
+      "2026-05-03"
+    ],
+    "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold": [
+      "2026-05-03"
+    ],
+    "running-sum-of-1d-array": [
+      "2026-05-03"
+    ],
+    "maximum-average-subarray-i": [
+      "2026-05-03"
+    ],
+    "intersection-of-two-arrays": [
+      "2026-05-03",
+      "2026-04-22"
+    ],
+    "is-subsequence": [
+      "2026-05-02"
+    ],
+    "merge-sorted-array": [
+      "2026-05-02"
+    ],
+    "move-zeroes": [
+      "2026-05-01",
+      "2026-04-28"
+    ],
+    "remove-element": [
+      "2026-05-01"
+    ],
+    "backspace-string-compare": [
+      "2026-04-29"
+    ],
+    "squares-of-a-sorted-array": [
+      "2026-04-28"
+    ],
+    "intersection-of-two-arrays-ii": [
+      "2026-04-22"
+    ],
+    "happy-number": [
+      "2026-04-22"
+    ],
+    "find-the-difference": [
+      "2026-04-19"
+    ],
+    "first-unique-character-in-a-string": [
+      "2026-04-19"
+    ],
+    "ransom-note": [
+      "2026-04-19"
+    ],
+    "majority-element": [
+      "2026-04-19"
+    ],
+    "find-all-numbers-disappeared-in-an-array": [
+      "2026-04-19"
+    ]
+  }
+}
