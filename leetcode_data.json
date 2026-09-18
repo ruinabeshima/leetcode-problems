@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17 05:41 UTC",
+  "generated_at": "2026-09-18 01:41 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -152,6 +152,14 @@
       "title": "Same Tree",
       "difficulty": "Easy",
       "dir": "trees/100-same-tree",
+      "topic": "trees"
+    },
+    {
+      "id": 102,
+      "slug": "binary-tree-level-order-traversal",
+      "title": "Binary Tree Level Order Traversal",
+      "difficulty": "Medium",
+      "dir": "trees/102-binary-tree-level-order-traversal",
       "topic": "trees"
     },
     {
@@ -612,6 +620,13 @@
     }
   ],
   "history": {
+    "linked-list-cycle": [
+      "2026-09-18",
+      "2026-05-08"
+    ],
+    "binary-tree-level-order-traversal": [
+      "2026-09-17"
+    ],
     "course-schedule": [
       "2026-09-17",
       "2026-09-12"
@@ -819,9 +834,6 @@
       "2026-05-09"
     ],
     "middle-of-the-linked-list": [
-      "2026-05-08"
-    ],
-    "linked-list-cycle": [
       "2026-05-08"
     ],
     "grumpy-bookstore-owner": [

@@ -1,6 +1,6 @@
 # LeetCode progress
 
-Generated 2026-09-17 05:41 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
+Generated 2026-09-18 01:41 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
 
 Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritten.
 
@@ -9,9 +9,9 @@ Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritt
 | Difficulty | Solved |
 |---|---|
 | Easy | 45 |
-| Medium | 30 |
+| Medium | 31 |
 | Hard | 1 |
-| All | 76 |
+| All | 77 |
 
 ## Curriculum progress
 
@@ -21,11 +21,11 @@ contains it, so the first row with anything remaining is what comes next.
 
 | Tier | Solved | Total | Remaining |
 |---|---|---|---|
-| Blind 75 | 33 | 75 | 42 |
+| Blind 75 | 34 | 75 | 41 |
 | NeetCode 150 | 12 | 75 | 63 |
 | NeetCode All (450) | 19 | 300 | 281 |
 
-### Next up: Blind 75 — 42 left
+### Next up: Blind 75 — 41 left
 
 In NeetCode's own order, grouped by pattern. Recommend from here first.
 
@@ -38,9 +38,8 @@ In NeetCode's own order, grouped by pattern. Recommend from here first.
   - [ ] [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) · Medium
 - **Linked List** (1)
   - [ ] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) · Hard
-- **Trees** (7)
+- **Trees** (6)
   - [ ] [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) · Medium
-  - [ ] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) · Medium
   - [ ] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) · Medium
   - [ ] [Kth Smallest Element In a Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) · Medium
   - [ ] [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) · Medium
@@ -99,36 +98,36 @@ the committed one. Reading the old solution and nodding is not recall.
 A problem leaves this queue by being accepted on LeetCode again, which is
 what writes the new commit — retyping it locally does not advance the ladder.
 
-**Limit: 1 review per day.** 68 of 76 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~68 days of review.
+**Limit: 1 review per day.** 67 of 77 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~67 days of review.
 
 ### Done for today
 
-Already re-solved **Course Schedule** today. Nothing further is due — do new problems instead, or stop.
+Already re-solved **Linked List Cycle** today. Nothing further is due — do new problems instead, or stop.
 
 Next in line tomorrow:
 
 | Problem | List | Last solved | Age | Interval | Reps |
 |---|---|---|---|---|---|
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Blind 75 | 2026-05-08 | 132d | 3d | 1 |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Blind 75 | 2026-06-08 | 102d | 3d | 1 |
 
-<details><summary>The other 67 queued, highest-value first</summary>
+<details><summary>The other 66 queued, highest-value first</summary>
 
-- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) — Blind 75, 101d since last solve, 1 rep
-- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Blind 75, 101d since last solve, 1 rep
-- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 98d since last solve, 1 rep
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 99d since last solve, 3 reps
-- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 98d since last solve, 3 reps
-- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 78d since last solve, 1 rep
-- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 78d since last solve, 1 rep
-- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 80d since last solve, 2 reps
-- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 80d since last solve, 2 reps
-- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 78d since last solve, 2 reps
-- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 80d since last solve, 3 reps
-- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 26d since last solve, 1 rep
-- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 26d since last solve, 1 rep
-- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 26d since last solve, 1 rep
-- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 26d since last solve, 1 rep
-- … and 52 more
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Blind 75, 102d since last solve, 1 rep
+- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 99d since last solve, 1 rep
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 100d since last solve, 3 reps
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 99d since last solve, 3 reps
+- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 79d since last solve, 1 rep
+- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 79d since last solve, 1 rep
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 81d since last solve, 2 reps
+- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 81d since last solve, 2 reps
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 79d since last solve, 2 reps
+- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 81d since last solve, 3 reps
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 27d since last solve, 1 rep
+- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 27d since last solve, 1 rep
+- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 27d since last solve, 1 rep
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 27d since last solve, 1 rep
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Blind 75, 81d since last solve, 4 reps
+- … and 51 more
 
 </details>
 
@@ -137,10 +136,10 @@ Next in line tomorrow:
 Each block is the memorised code in that file; each twist is a one-line
 change to it. A missing canonical problem is a gap worth filling.
 
-### `blocks/graphs.py` — 6/19 canonical
+### `blocks/graphs.py` — 7/19 canonical
 
-- **BFS with levels** (0/2)  ← **never done**
-  - [ ] [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- **BFS with levels** (1/2)
+  - [x] [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
   - [ ] [word-ladder](https://leetcode.com/problems/word-ladder/)
 - **multi-source BFS (twist)** (1/2)
   - [x] [rotting-oranges](https://leetcode.com/problems/rotting-oranges/)
@@ -169,7 +168,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - **0-1 BFS (twist)** (0/1)  ← **never done**
   - [ ] [minimum-obstacle-removal-to-reach-corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/)
 
-### `blocks/trees.py` — 1/13 canonical
+### `blocks/trees.py` — 2/13 canonical
 
 - **bottom-up DFS** (1/4)
   - [x] [maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
@@ -180,8 +179,8 @@ change to it. A missing canonical problem is a gap worth filling.
   - [ ] [path-sum](https://leetcode.com/problems/path-sum/)
   - [ ] [path-sum-ii](https://leetcode.com/problems/path-sum-ii/)
   - [ ] [sum-root-to-leaf-numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
-- **level-order BFS** (0/2)  ← **never done**
-  - [ ] [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- **level-order BFS** (1/2)
+  - [x] [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
   - [ ] [binary-tree-right-side-view](https://leetcode.com/problems/binary-tree-right-side-view/)
 - **BST ordering** (0/2)  ← **never done**
   - [ ] [validate-binary-search-tree](https://leetcode.com/problems/validate-binary-search-tree/)
@@ -291,7 +290,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - 21. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) · Easy · 2 solves
 - 83. [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) · Easy · 1 solve
 - 138. [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) · Medium · 1 solve
-- 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) · Easy · 1 solve
+- 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) · Easy · 2 solves
 - 143. [Reorder List](https://leetcode.com/problems/reorder-list/) · Medium · 1 solve
 - 146. [LRU Cache](https://leetcode.com/problems/lru-cache/) · Medium · 1 solve
 - 203. [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) · Easy · 1 solve
@@ -356,6 +355,16 @@ change to it. A missing canonical problem is a gap worth filling.
 
 </details>
 
+<details><summary><b>Trees</b> (5)</summary>
+
+- 100. [Same Tree](https://leetcode.com/problems/same-tree/) · Easy · 1 solve
+- 102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) · Medium · 1 solve
+- 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) · Easy · 2 solves
+- 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) · Easy · 1 solve
+- 572. [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) · Easy · 1 solve
+
+</details>
+
 <details><summary><b>Binary Search</b> (4)</summary>
 
 - 74. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) · Medium · 1 solve
@@ -371,15 +380,6 @@ change to it. A missing canonical problem is a gap worth filling.
 - 121. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) · Easy · 3 solves
 - 219. [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) · Easy · 2 solves
 - 1445. [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) · Medium · 1 solve
-
-</details>
-
-<details><summary><b>Trees</b> (4)</summary>
-
-- 100. [Same Tree](https://leetcode.com/problems/same-tree/) · Easy · 1 solve
-- 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) · Easy · 2 solves
-- 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) · Easy · 1 solve
-- 572. [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) · Easy · 1 solve
 
 </details>
 
