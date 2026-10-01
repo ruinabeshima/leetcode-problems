@@ -1,6 +1,6 @@
 # LeetCode progress
 
-Generated 2026-10-01 06:24 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
+Generated 2026-10-01 07:09 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
 
 Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritten.
 
@@ -9,9 +9,9 @@ Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritt
 | Difficulty | Solved |
 |---|---|
 | Easy | 45 |
-| Medium | 32 |
+| Medium | 33 |
 | Hard | 1 |
-| All | 78 |
+| All | 79 |
 
 ## Curriculum progress
 
@@ -21,11 +21,11 @@ contains it, so the first row with anything remaining is what comes next.
 
 | Tier | Solved | Total | Remaining |
 |---|---|---|---|
-| Blind 75 | 35 | 75 | 40 |
+| Blind 75 | 36 | 75 | 39 |
 | NeetCode 150 | 12 | 75 | 63 |
 | NeetCode All (450) | 19 | 300 | 281 |
 
-### Next up: Blind 75 — 40 left
+### Next up: Blind 75 — 39 left
 
 In NeetCode's own order, grouped by pattern. Recommend from here first.
 
@@ -43,8 +43,7 @@ In NeetCode's own order, grouped by pattern. Recommend from here first.
   - [ ] [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) · Medium
   - [ ] [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) · Hard
   - [ ] [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) · Hard
-- **Tries** (3)
-  - [ ] [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/) · Medium
+- **Tries** (2)
   - [ ] [Design Add And Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) · Medium
   - [ ] [Word Search II](https://leetcode.com/problems/word-search-ii/) · Hard
 - **Heap / Priority Queue** (1)
@@ -96,17 +95,20 @@ the committed one. Reading the old solution and nodding is not recall.
 A problem leaves this queue by being accepted on LeetCode again, which is
 what writes the new commit — retyping it locally does not advance the ladder.
 
-**Limit: 1 review per day.** 76 of 78 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~76 days of review.
+**Limit: 1 review per day.** 75 of 79 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~75 days of review.
 
-### Today — 1 to do
+### Done for today
+
+Already re-solved **Product of Array Except Self** today. Nothing further is due — do new problems instead, or stop.
+
+Next in line tomorrow:
 
 | Problem | List | Last solved | Age | Interval | Reps |
 |---|---|---|---|---|---|
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Blind 75 | 2026-06-08 | 115d | 3d | 1 |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Blind 75 | 2026-06-08 | 115d | 3d | 1 |
 
-<details><summary>The other 75 queued, highest-value first</summary>
+<details><summary>The other 74 queued, highest-value first</summary>
 
-- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Blind 75, 115d since last solve, 1 rep
 - [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 112d since last solve, 1 rep
 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 113d since last solve, 3 reps
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 112d since last solve, 3 reps
@@ -121,7 +123,8 @@ what writes the new commit — retyping it locally does not advance the ladder.
 - [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 40d since last solve, 1 rep
 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 40d since last solve, 1 rep
 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Blind 75, 94d since last solve, 4 reps
-- … and 60 more
+- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Blind 75, 91d since last solve, 4 reps
+- … and 59 more
 
 </details>
 
@@ -229,10 +232,10 @@ change to it. A missing canonical problem is a gap worth filling.
 - **partition (twist)** (0/1)  ← **never done**
   - [ ] [palindrome-partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 
-### `blocks/tries.py` — 0/3 canonical
+### `blocks/tries.py` — 1/3 canonical
 
-- **children dict + is_word** (0/1)  ← **never done**
-  - [ ] [implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/)
+- **children dict + is_word** (1/1)
+  - [x] [implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/)
 - **wildcard search (twist)** (0/1)  ← **never done**
   - [ ] [design-add-and-search-words-data-structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
 - **trie + grid backtracking (twist)** (0/1)  ← **never done**
@@ -268,7 +271,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - 128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) · Medium · 2 solves
 - 169. [Majority Element](https://leetcode.com/problems/majority-element/) · Easy · 1 solve
 - 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) · Easy · 5 solves
-- 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) · Medium · 1 solve
+- 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) · Medium · 2 solves
 - 242. [Valid Anagram](https://leetcode.com/problems/valid-anagram/) · Easy · 4 solves
 - 271. [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) · Medium · 1 solve
 - 347. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) · Medium · 1 solve
@@ -394,6 +397,12 @@ change to it. A missing canonical problem is a gap worth filling.
 <details><summary><b>Math & Geometry</b> (1)</summary>
 
 - 202. [Happy Number](https://leetcode.com/problems/happy-number/) · Easy · 1 solve
+
+</details>
+
+<details><summary><b>Tries</b> (1)</summary>
+
+- 208. [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) · Medium · 1 solve
 
 </details>
 

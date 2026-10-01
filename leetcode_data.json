@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01 06:24 UTC",
+  "generated_at": "2026-10-01 07:09 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -305,6 +305,14 @@
       "difficulty": "Medium",
       "dir": "graphs/207-course-schedule",
       "topic": "graphs"
+    },
+    {
+      "id": 208,
+      "slug": "implement-trie-prefix-tree",
+      "title": "Implement Trie (Prefix Tree)",
+      "difficulty": "Medium",
+      "dir": "tries/208-implement-trie-prefix-tree",
+      "topic": "tries"
     },
     {
       "id": 213,
@@ -628,6 +636,13 @@
     }
   ],
   "history": {
+    "implement-trie-prefix-tree": [
+      "2026-10-01"
+    ],
+    "product-of-array-except-self": [
+      "2026-10-01",
+      "2026-06-08"
+    ],
     "encode-and-decode-strings": [
       "2026-09-18"
     ],
@@ -801,9 +816,6 @@
     ],
     "valid-sudoku": [
       "2026-06-09"
-    ],
-    "product-of-array-except-self": [
-      "2026-06-08"
     ],
     "top-k-frequent-elements": [
       "2026-06-08"

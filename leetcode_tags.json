@@ -36,6 +36,12 @@
   "Array",
   "Sliding Window"
  ],
+ "implement-trie-prefix-tree": [
+  "Hash Table",
+  "String",
+  "Design",
+  "Trie"
+ ],
  "intersection-of-two-arrays": [
   "Array",
   "Hash Table",
