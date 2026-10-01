@@ -1,6 +1,6 @@
 # LeetCode progress
 
-Generated 2026-09-18 01:41 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
+Generated 2026-10-01 06:24 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
 
 Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritten.
 
@@ -9,9 +9,9 @@ Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritt
 | Difficulty | Solved |
 |---|---|
 | Easy | 45 |
-| Medium | 31 |
+| Medium | 32 |
 | Hard | 1 |
-| All | 77 |
+| All | 78 |
 
 ## Curriculum progress
 
@@ -21,16 +21,14 @@ contains it, so the first row with anything remaining is what comes next.
 
 | Tier | Solved | Total | Remaining |
 |---|---|---|---|
-| Blind 75 | 34 | 75 | 41 |
+| Blind 75 | 35 | 75 | 40 |
 | NeetCode 150 | 12 | 75 | 63 |
 | NeetCode All (450) | 19 | 300 | 281 |
 
-### Next up: Blind 75 — 41 left
+### Next up: Blind 75 — 40 left
 
 In NeetCode's own order, grouped by pattern. Recommend from here first.
 
-- **Arrays & Hashing** (1)
-  - [ ] [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) · Medium
 - **Sliding Window** (2)
   - [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) · Medium
   - [ ] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) · Hard
@@ -98,36 +96,32 @@ the committed one. Reading the old solution and nodding is not recall.
 A problem leaves this queue by being accepted on LeetCode again, which is
 what writes the new commit — retyping it locally does not advance the ladder.
 
-**Limit: 1 review per day.** 67 of 77 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~67 days of review.
+**Limit: 1 review per day.** 76 of 78 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~76 days of review.
 
-### Done for today
-
-Already re-solved **Linked List Cycle** today. Nothing further is due — do new problems instead, or stop.
-
-Next in line tomorrow:
+### Today — 1 to do
 
 | Problem | List | Last solved | Age | Interval | Reps |
 |---|---|---|---|---|---|
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Blind 75 | 2026-06-08 | 102d | 3d | 1 |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Blind 75 | 2026-06-08 | 115d | 3d | 1 |
 
-<details><summary>The other 66 queued, highest-value first</summary>
+<details><summary>The other 75 queued, highest-value first</summary>
 
-- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Blind 75, 102d since last solve, 1 rep
-- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 99d since last solve, 1 rep
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 100d since last solve, 3 reps
-- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 99d since last solve, 3 reps
-- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 79d since last solve, 1 rep
-- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 79d since last solve, 1 rep
-- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 81d since last solve, 2 reps
-- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 81d since last solve, 2 reps
-- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 79d since last solve, 2 reps
-- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 81d since last solve, 3 reps
-- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 27d since last solve, 1 rep
-- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 27d since last solve, 1 rep
-- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 27d since last solve, 1 rep
-- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 27d since last solve, 1 rep
-- [Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Blind 75, 81d since last solve, 4 reps
-- … and 51 more
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Blind 75, 115d since last solve, 1 rep
+- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 112d since last solve, 1 rep
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 113d since last solve, 3 reps
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 112d since last solve, 3 reps
+- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 92d since last solve, 1 rep
+- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 92d since last solve, 1 rep
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 94d since last solve, 2 reps
+- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 94d since last solve, 2 reps
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 92d since last solve, 2 reps
+- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 94d since last solve, 3 reps
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 40d since last solve, 1 rep
+- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 40d since last solve, 1 rep
+- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 40d since last solve, 1 rep
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 40d since last solve, 1 rep
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Blind 75, 94d since last solve, 4 reps
+- … and 60 more
 
 </details>
 
@@ -265,7 +259,7 @@ change to it. A missing canonical problem is a gap worth filling.
 
 ## All solved problems
 
-<details><summary><b>Arrays & Hashing</b> (13)</summary>
+<details><summary><b>Arrays & Hashing</b> (14)</summary>
 
 - 1. [Two Sum](https://leetcode.com/problems/two-sum/) · Easy · 3 solves
 - 27. [Remove Element](https://leetcode.com/problems/remove-element/) · Easy · 1 solve
@@ -276,6 +270,7 @@ change to it. A missing canonical problem is a gap worth filling.
 - 217. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) · Easy · 5 solves
 - 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) · Medium · 1 solve
 - 242. [Valid Anagram](https://leetcode.com/problems/valid-anagram/) · Easy · 4 solves
+- 271. [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) · Medium · 1 solve
 - 347. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) · Medium · 1 solve
 - 392. [Is Subsequence](https://leetcode.com/problems/is-subsequence/) · Easy · 1 solve
 - 448. [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) · Easy · 1 solve

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18 01:41 UTC",
+  "generated_at": "2026-10-01 06:24 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -371,6 +371,14 @@
       "topic": "bit-manipulation"
     },
     {
+      "id": 271,
+      "slug": "encode-and-decode-strings",
+      "title": "Encode and Decode Strings",
+      "difficulty": "Medium",
+      "dir": "arrays-hashing/271-encode-and-decode-strings",
+      "topic": "arrays-hashing"
+    },
+    {
       "id": 283,
       "slug": "move-zeroes",
       "title": "Move Zeroes",
@@ -620,6 +628,9 @@
     }
   ],
   "history": {
+    "encode-and-decode-strings": [
+      "2026-09-18"
+    ],
     "linked-list-cycle": [
       "2026-09-18",
       "2026-05-08"

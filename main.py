@@ -1,24 +1,36 @@
-from collections import deque
+class TrieNode: 
+    def __init__(self): 
+        self.children = {}
+        self.is_word = False 
 
-def level_order(root): 
-    if not root: 
-        return []
+class Trie: 
+    def __init__(self):
+        self.root = TrieNode() 
 
-    queue = deque([root])
-    out = []
+    def insert(self, word): 
+        node = self.root 
 
-    while queue: 
-        level = []
+        for ch in word:
+            if ch not in node.children: 
+                node.children[ch] = TrieNode() 
+            node = node.children[ch]
 
-        for _ in range(len(queue)):
-            node = queue.popleft()
-            level.append(node.val)
+        # Mark the last node
+        node.is_word = True 
 
-            if node.left: 
-                queue.append(node.left)
-            if node.right: 
-                queue.append(node.right)
+    def walk(self, s): 
+        node = self.root 
 
-        out.append(level)
+        for ch in s: 
+            if ch not in node.children: 
+                return None 
+            node = node.children[ch]
 
-    return out
+        return node 
+
+    def search(self, word): 
+        node = self.walk(word)
+        return node is not None and node.is_word
+
+    def starts_with(self, prefix): 
+        return self.walk(prefix) is not None
