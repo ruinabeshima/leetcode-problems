@@ -1,6 +1,6 @@
 # LeetCode progress
 
-Generated 2026-10-01 07:09 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
+Generated 2026-10-15 14:48 UTC by `leetcode_sync.py` from `/Users/wota/Desktop/leetcode-problems`.
 
 Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritten.
 
@@ -8,10 +8,10 @@ Regenerate with `python3 leetcode_sync.py`. Do not hand-edit — it is overwritt
 
 | Difficulty | Solved |
 |---|---|
-| Easy | 45 |
+| Easy | 46 |
 | Medium | 33 |
 | Hard | 1 |
-| All | 79 |
+| All | 80 |
 
 ## Curriculum progress
 
@@ -22,7 +22,7 @@ contains it, so the first row with anything remaining is what comes next.
 | Tier | Solved | Total | Remaining |
 |---|---|---|---|
 | Blind 75 | 36 | 75 | 39 |
-| NeetCode 150 | 12 | 75 | 63 |
+| NeetCode 150 | 13 | 75 | 62 |
 | NeetCode All (450) | 19 | 300 | 281 |
 
 ### Next up: Blind 75 — 39 left
@@ -95,36 +95,32 @@ the committed one. Reading the old solution and nodding is not recall.
 A problem leaves this queue by being accepted on LeetCode again, which is
 what writes the new commit — retyping it locally does not advance the ladder.
 
-**Limit: 1 review per day.** 75 of 79 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~75 days of review.
+**Limit: 1 review per day.** 77 of 80 solved problems are cold, but that is the backlog, not today's work — at 1/day it is ~77 days of review.
 
-### Done for today
-
-Already re-solved **Product of Array Except Self** today. Nothing further is due — do new problems instead, or stop.
-
-Next in line tomorrow:
+### Today — 1 to do
 
 | Problem | List | Last solved | Age | Interval | Reps |
 |---|---|---|---|---|---|
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Blind 75 | 2026-06-08 | 115d | 3d | 1 |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Blind 75 | 2026-06-08 | 129d | 3d | 1 |
 
-<details><summary>The other 74 queued, highest-value first</summary>
+<details><summary>The other 76 queued, highest-value first</summary>
 
-- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 112d since last solve, 1 rep
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 113d since last solve, 3 reps
-- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 112d since last solve, 3 reps
-- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 92d since last solve, 1 rep
-- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 92d since last solve, 1 rep
-- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 94d since last solve, 2 reps
-- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 94d since last solve, 2 reps
-- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 92d since last solve, 2 reps
-- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 94d since last solve, 3 reps
-- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 40d since last solve, 1 rep
-- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 40d since last solve, 1 rep
-- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 40d since last solve, 1 rep
-- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 40d since last solve, 1 rep
-- [Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Blind 75, 94d since last solve, 4 reps
-- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Blind 75, 91d since last solve, 4 reps
-- … and 59 more
+- [3Sum](https://leetcode.com/problems/3sum/) — Blind 75, 126d since last solve, 1 rep
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Blind 75, 127d since last solve, 3 reps
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — Blind 75, 126d since last solve, 3 reps
+- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Blind 75, 106d since last solve, 1 rep
+- [Reorder List](https://leetcode.com/problems/reorder-list/) — Blind 75, 106d since last solve, 1 rep
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Blind 75, 108d since last solve, 2 reps
+- [Missing Number](https://leetcode.com/problems/missing-number/) — Blind 75, 108d since last solve, 2 reps
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Blind 75, 106d since last solve, 2 reps
+- [Two Sum](https://leetcode.com/problems/two-sum/) — Blind 75, 108d since last solve, 3 reps
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) — Blind 75, 54d since last solve, 1 rep
+- [House Robber II](https://leetcode.com/problems/house-robber-ii/) — Blind 75, 54d since last solve, 1 rep
+- [House Robber](https://leetcode.com/problems/house-robber/) — Blind 75, 54d since last solve, 1 rep
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) — Blind 75, 54d since last solve, 1 rep
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Blind 75, 108d since last solve, 4 reps
+- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Blind 75, 105d since last solve, 4 reps
+- … and 61 more
 
 </details>
 
@@ -391,6 +387,12 @@ change to it. A missing canonical problem is a gap worth filling.
 <details><summary><b>Bit Manipulation</b> (1)</summary>
 
 - 268. [Missing Number](https://leetcode.com/problems/missing-number/) · Easy · 2 solves
+
+</details>
+
+<details><summary><b>Heap / Priority Queue</b> (1)</summary>
+
+- 703. [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) · Easy · 1 solve
 
 </details>
 

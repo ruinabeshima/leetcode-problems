@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01 07:09 UTC",
+  "generated_at": "2026-10-15 14:48 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -539,6 +539,14 @@
       "topic": "graphs"
     },
     {
+      "id": 703,
+      "slug": "kth-largest-element-in-a-stream",
+      "title": "Kth Largest Element in a Stream",
+      "difficulty": "Easy",
+      "dir": "heap-priority-queue/703-kth-largest-element-in-a-stream",
+      "topic": "heap-priority-queue"
+    },
+    {
       "id": 745,
       "slug": "find-smallest-letter-greater-than-target",
       "title": "Find Smallest Letter Greater Than Target",
@@ -636,6 +644,9 @@
     }
   ],
   "history": {
+    "kth-largest-element-in-a-stream": [
+      "2026-10-15"
+    ],
     "implement-trie-prefix-tree": [
       "2026-10-01"
     ],

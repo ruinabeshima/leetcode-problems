@@ -56,6 +56,14 @@
   "Binary Search",
   "Sorting"
  ],
+ "kth-largest-element-in-a-stream": [
+  "Tree",
+  "Design",
+  "Binary Search Tree",
+  "Heap (Priority Queue)",
+  "Binary Tree",
+  "Data Stream"
+ ],
  "maximum-average-subarray-i": [
   "Array",
   "Sliding Window"

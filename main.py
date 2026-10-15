@@ -1,36 +1,46 @@
-class TrieNode: 
-    def __init__(self): 
-        self.children = {}
-        self.is_word = False 
+import heapq
 
-class Trie: 
-    def __init__(self):
-        self.root = TrieNode() 
+def heap(): 
+    nums = [5, 1, 8, 3]
 
-    def insert(self, word): 
-        node = self.root 
+    heapq.heapify(nums)
+    heapq.heappush(nums, 2)
+    smallest = heapq.heappop(nums)
+    peek = nums[0]
 
-        for ch in word:
-            if ch not in node.children: 
-                node.children[ch] = TrieNode() 
-            node = node.children[ch]
+    max_heap = []
+    for n in nums: 
+        heapq.heappush(max_heap, -n)
+    largest = -heapq.heappop(max_heap)
 
-        # Mark the last node
-        node.is_word = True 
+    tasks = []
+    heapq.heappush(tasks, (2, "later"))
+    heapq.heappush(tasks, (1, "sooner"))
 
-    def walk(self, s): 
-        node = self.root 
 
-        for ch in s: 
-            if ch not in node.children: 
-                return None 
-            node = node.children[ch]
+    print(smallest, peek, largest)
 
-        return node 
+heap()
 
-    def search(self, word): 
-        node = self.walk(word)
-        return node is not None and node.is_word
+def kthlargest(nums, k):
+    heap = []
 
-    def starts_with(self, prefix): 
-        return self.walk(prefix) is not None
+    for n in nums: 
+        heapq.heappush(nums, n)
+        if len(heap) > k: 
+            heapq.heappop(heap)
+
+        return heap 
+
+
+def ksmallest(nums, k):
+    heap = []
+
+    for n in nums: 
+        heapq.heappush(heap, -n)
+        if len(nums) > k: 
+            heapq.heappush(heap)
+
+    return [-x for x in heap]
+
+
