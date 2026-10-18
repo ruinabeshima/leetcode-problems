@@ -56,6 +56,16 @@
   "Binary Search",
   "Sorting"
  ],
+ "k-closest-points-to-origin": [
+  "Array",
+  "Math",
+  "Divide and Conquer",
+  "Geometry",
+  "Sorting",
+  "Heap (Priority Queue)",
+  "Quickselect",
+  "K-D Tree"
+ ],
  "kth-largest-element-in-a-stream": [
   "Tree",
   "Design",
@@ -63,6 +73,17 @@
   "Heap (Priority Queue)",
   "Binary Tree",
   "Data Stream"
+ ],
+ "kth-largest-element-in-an-array": [
+  "Array",
+  "Divide and Conquer",
+  "Sorting",
+  "Heap (Priority Queue)",
+  "Quickselect"
+ ],
+ "last-stone-weight": [
+  "Array",
+  "Heap (Priority Queue)"
  ],
  "maximum-average-subarray-i": [
   "Array",
@@ -82,5 +103,13 @@
  "running-sum-of-1d-array": [
   "Array",
   "Prefix Sum"
+ ],
+ "task-scheduler": [
+  "Array",
+  "Hash Table",
+  "Greedy",
+  "Sorting",
+  "Heap (Priority Queue)",
+  "Counting"
  ]
 }

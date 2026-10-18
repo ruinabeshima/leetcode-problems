@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15 14:48 UTC",
+  "generated_at": "2026-10-18 11:31 UTC",
   "problems_dir": "/Users/wota/Desktop/leetcode-problems",
   "problems": [
     {
@@ -323,6 +323,14 @@
       "topic": "dp-1d"
     },
     {
+      "id": 215,
+      "slug": "kth-largest-element-in-an-array",
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "dir": "heap-priority-queue/215-kth-largest-element-in-an-array",
+      "topic": "heap-priority-queue"
+    },
+    {
       "id": 217,
       "slug": "contains-duplicate",
       "title": "Contains Duplicate",
@@ -499,6 +507,14 @@
       "topic": "trees"
     },
     {
+      "id": 621,
+      "slug": "task-scheduler",
+      "title": "Task Scheduler",
+      "difficulty": "Medium",
+      "dir": "heap-priority-queue/621-task-scheduler",
+      "topic": "heap-priority-queue"
+    },
+    {
       "id": 643,
       "slug": "maximum-average-subarray-i",
       "title": "Maximum Average Subarray I",
@@ -579,6 +595,14 @@
       "topic": "linked-list"
     },
     {
+      "id": 973,
+      "slug": "k-closest-points-to-origin",
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "dir": "heap-priority-queue/973-k-closest-points-to-origin",
+      "topic": "heap-priority-queue"
+    },
+    {
       "id": 994,
       "slug": "rotting-oranges",
       "title": "Rotting Oranges",
@@ -601,6 +625,14 @@
       "difficulty": "Easy",
       "dir": "binary-search/1019-squares-of-a-sorted-array",
       "topic": "binary-search"
+    },
+    {
+      "id": 1046,
+      "slug": "last-stone-weight",
+      "title": "Last Stone Weight",
+      "difficulty": "Easy",
+      "dir": "heap-priority-queue/1046-last-stone-weight",
+      "topic": "heap-priority-queue"
     },
     {
       "id": 1138,
@@ -644,7 +676,23 @@
     }
   ],
   "history": {
+    "task-scheduler": [
+      "2026-10-18"
+    ],
+    "kth-largest-element-in-an-array": [
+      "2026-10-18",
+      "2026-10-17"
+    ],
+    "last-stone-weight": [
+      "2026-10-18",
+      "2026-10-16"
+    ],
+    "k-closest-points-to-origin": [
+      "2026-10-18",
+      "2026-10-16"
+    ],
     "kth-largest-element-in-a-stream": [
+      "2026-10-18",
       "2026-10-15"
     ],
     "implement-trie-prefix-tree": [
